@@ -1,0 +1,879 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-08 01:34:01.905169522 UTC
+
+interface xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv:XMonad.My.Log 8001
+  interface hash: 6e1649606ea2ce29e033394061aed34c
+  ABI hash: abdee42bed95f99b4032f32551ccffe4
+  export-list hash: 2e0966f20237873fd0b69d50d06df5a2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4a75c4e57dd2ac4b9cd7e9d030ab3862
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  XMonad.My.Log.loggers
+  XMonad.My.Log.panel
+  XMonad.My.Log.sep
+module dependencies: XMonad.My.Theme XMonad.Util.Lemonbar
+                     XMonad.Util.XResources
+package dependencies: X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL
+                      X11-xft-0.3.1@X11-xft-0.3.1-K5aCxhr7PdkBJ0izTORldG
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-default-0.7.1.1@data-default-0.7.1.1-5uix4eIzBY9IcVb4V2HbW3
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-FYQpjIylblBDctdkHAFeXA
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.2.6.2@directory-1.2.6.2
+                      dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv
+                      extensible-exceptions-0.1.1.4@extensible-exceptions-0.1.1.4-3h0ykvvAO915cRhUyj3rRV
+                      filepath-1.4.1.0@filepath-1.4.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-6glXNhHF891B41ZfuI8hU8
+                      old-time-1.1.0.3@old-time-1.1.0.3-IcvdkJUsE9M8t3io8peAEp
+                      process-1.4.2.0@process-1.4.2.0
+                      setlocale-1.0.0.4@setlocale-1.0.0.4-EUtO5CfNQTBH7QTFQEDDaI
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.0@unix-2.7.2.0
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-2T8mBCuEDlXDo8zed8Onw4
+                      xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI
+                      xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84:Data.Default.Instances.OldLocale
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad.Config
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv:Data.DList
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.IO.Handle a1938753d58593f0a419f85b67aa7cd3
+import  -/  base-4.9.0.0:GHC.IO.Handle.Text 23b6dc4ed000f42bf105ce56bdeb0dc6
+import  -/  base-4.9.0.0:GHC.IO.Handle.Types a94506fe2fe805a97a84bccd65c71eb8
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-FYQpjIylblBDctdkHAFeXA:Data.Default.Class 72aea65837037cb18225a6a1650cf94e
+import  -/  xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad b456b70eb07734470cc1ac0ec218c4da
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Actions.DynamicWorkspaceOrder 110ccf5ff64f10be0b0c753a8a4a490e
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Hooks.DynamicLog 1dd559bcd58af255db05718545088b65
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Util.Loggers eeeff42630d9898e4f8bf47e70894bfa
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Util.Run 8efabadcd2d4b6d9609782d54a4ce403
+import  -/  XMonad.My.Theme a0e759d8d1a0e7cf28312a0dd0c84a89
+  exports: 36250994ca13d4422ed3d62089b4a0b7
+  focusBG 48975c1f318f2e71c9d5cc5602989e94
+  normalBG 0583b11e086ae6034d02410a6a7a63cf
+  urgentBG 56ceb5fc832bd2bb96d90bfbcd12a785
+  urgentFG 52118f7ca4f483e6423ef97e8b122750
+import  -/  XMonad.Util.Lemonbar 86a711d8d57322cd39da4fc170316b66
+  exports: 301ff19b5186ae53867daa46237f5719
+  lbAlignLeft 36908db2e828129116d44084542c128d
+  lbAlignRight 97268947a788dd6561eea94002e591c8
+  lbClick 3130b470e5b2a0e12696fc3d16addb79
+  lbClickL dd0ca1a9a93888acade06ce46544435a
+  lbColor 465cc10b8e41145c5a563ced8fe0cf83
+  lbColorL 6c41ff6a50a306113550be964d1d5cc8
+  lbUnderline 4f0be7bb3f2e711abdd8a44d92e9a329
+23795756d1419f773ec61a165ffe873c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   XMonad.My.Log.$trModule2
+                   XMonad.My.Log.$trModule1) -}
+ddf81e017385218051f9e289f70e481a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "XMonad.My.Log"#) -}
+c910376f4b9283595a16dd39e830ccb4
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv"#) -}
+c16537595f458e7d7b21db2f23df48d2
+  $wlvl ::
+    [GHC.Base.String] -> (# GHC.Base.String, [GHC.Base.String] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: [GHC.Base.String]) ->
+                 case w of wild {
+                   []
+                   -> case XMonad.My.Log.panel3
+                      ret_ty (# GHC.Base.String, [GHC.Base.String] #)
+                      of {}
+                   : ws ds
+                   -> case ds of wild1 {
+                        []
+                        -> case XMonad.My.Log.panel3
+                           ret_ty (# GHC.Base.String, [GHC.Base.String] #)
+                           of {}
+                        : l ds1
+                        -> case ds1 of wild2 {
+                             []
+                             -> case XMonad.My.Log.panel3
+                                ret_ty (# GHC.Base.String, [GHC.Base.String] #)
+                                of {}
+                             : t xs
+                             -> (# XMonad.Util.Lemonbar.lbAlignLeft,
+                                   GHC.Types.:
+                                     @ GHC.Base.String
+                                     ws
+                                     (GHC.Types.:
+                                        @ GHC.Base.String
+                                        l
+                                        (GHC.Types.:
+                                           @ GHC.Base.String
+                                           t
+                                           (GHC.Types.:
+                                              @ GHC.Base.String
+                                              XMonad.Util.Lemonbar.lbAlignRight
+                                              (GHC.Types.:
+                                                 @ GHC.Base.String
+                                                 (XMonad.My.Log.panel_go xs)
+                                                 (GHC.Types.[] @ GHC.Base.String))))) #) } } }) -}
+54c18de1a70f96708b895993502b26d9
+  loggers :: [XMonad.Util.Loggers.Logger]
+  {- Unfolding: (GHC.List.reverse1
+                   @ XMonad.Util.Loggers.Logger
+                   XMonad.My.Log.loggers1
+                   (GHC.Types.[] @ XMonad.Util.Loggers.Logger)) -}
+c90dafbeae645b101c5c28b27d27986a
+  loggers1 :: [XMonad.Util.Loggers.Logger]
+  {- Unfolding: (GHC.Types.:
+                   @ XMonad.Util.Loggers.Logger
+                   XMonad.My.Log.loggers24
+                     `cast`
+                   (Trans
+                        (<XMonad.Core.XConf>_R
+                         ->_R Trans
+                                  (<XMonad.Core.XState>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <(GHC.Base.Maybe GHC.Base.String,
+                                                   XMonad.Core.XState)>_R))
+                                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                            <XMonad.Core.XState>_N
+                                            <GHC.Types.IO>_R
+                                            <GHC.Base.Maybe GHC.Base.String>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <XMonad.Core.XConf>_R
+                                       <Control.Monad.Trans.State.Lazy.StateT
+                                          XMonad.Core.XState GHC.Types.IO>_R
+                                       <GHC.Base.Maybe GHC.Base.String>_N))
+                             (Sym (XMonad.Core.N:X[0]) <GHC.Base.Maybe GHC.Base.String>_N)))
+                   XMonad.My.Log.loggers2) -}
+d630d9f6f89927e2798c65e1f413e888
+  loggers10 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbClick
+                   XMonad.My.Log.loggers12
+                   XMonad.My.Log.loggers11) -}
+c4e501a6f74c62cec80ed4cf048ab5af
+  loggers11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "urxvtc -n ncmpcpp -e ncmpcpp"#) -}
+893fc92472eb6a8ef0a6f9a055792550
+  loggers12 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+4650c8d217796186dfd27cfc837a5b4e
+  loggers13 ::
+    XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Base.Maybe GHC.Base.String, XMonad.Core.XState) #)
+  {- Arity: 3,
+     Unfolding: (\ (eta2 :: XMonad.Core.XConf)
+                   (eta :: XMonad.Core.XState)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Process.runInteractiveCommand1
+                        XMonad.My.Log.loggers_w1
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,,,) ds out ds2 ds3 ->
+                 case GHC.Prim.catch#
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        @ GHC.Exception.SomeException
+                        (GHC.Magic.lazy
+                           @ (GHC.Types.IO (GHC.Base.Maybe GHC.Base.String))
+                           (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.IO.Handle.Internals.wantReadableHandle_1
+                                   @ GHC.Base.String
+                                   GHC.IO.Handle.Text.hGetLine4
+                                   out
+                                   GHC.IO.Handle.Text.hGetLine2
+                                     `cast`
+                                   (<GHC.IO.Handle.Types.Handle__>_R
+                                    ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                                   eta3 of ds4 { (#,#) ipv2 ipv3 ->
+                            (# ipv2, GHC.Base.Just @ GHC.Base.String ipv3 #) })
+                             `cast`
+                           (Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)))
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)
+                        XMonad.Util.Loggers.aumixVolume3
+                        ipv of ds4 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    (case ipv3 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x
+                       -> let {
+                            x1 :: GHC.Base.String
+                            = XMonad.Hooks.DynamicLog.wrap
+                                XMonad.My.Log.loggers16
+                                XMonad.My.Log.loggers14
+                                x
+                          } in
+                          GHC.Base.Just @ GHC.Base.String (XMonad.My.Log.loggers_x x1) },
+                     eta) #) } } }) -}
+f9cf0881bee73fb9584b074d2a88ec58
+  loggers14 :: GHC.Base.String
+  {- Unfolding: (XMonad.My.Log.loggers_sepClr
+                   XMonad.My.Log.loggers_sep') -}
+a7d88d29ff66ddbc7bd9771db8119334
+  loggers15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   XMonad.My.Log.sep
+                   XMonad.My.Log.loggers16) -}
+acad5712158d6531a2647db55b6c9792
+  loggers16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " "#) -}
+61316e4ace65c391dc722e29deb4f1ac
+  loggers17 ::
+    XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Base.Maybe GHC.Base.String, XMonad.Core.XState) #)
+  {- Arity: 3,
+     Unfolding: (\ (eta2 :: XMonad.Core.XConf)
+                   (eta :: XMonad.Core.XState)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Process.runInteractiveCommand1
+                        XMonad.My.Log.loggers_w2
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,,,) ds out ds2 ds3 ->
+                 case GHC.Prim.catch#
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        @ GHC.Exception.SomeException
+                        (GHC.Magic.lazy
+                           @ (GHC.Types.IO (GHC.Base.Maybe GHC.Base.String))
+                           (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.IO.Handle.Internals.wantReadableHandle_1
+                                   @ GHC.Base.String
+                                   GHC.IO.Handle.Text.hGetLine4
+                                   out
+                                   GHC.IO.Handle.Text.hGetLine2
+                                     `cast`
+                                   (<GHC.IO.Handle.Types.Handle__>_R
+                                    ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                                   eta3 of ds4 { (#,#) ipv2 ipv3 ->
+                            (# ipv2, GHC.Base.Just @ GHC.Base.String ipv3 #) })
+                             `cast`
+                           (Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)))
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)
+                        XMonad.Util.Loggers.aumixVolume3
+                        ipv of ds4 { (#,#) ipv2 ipv3 ->
+                 let {
+                   ipv4 :: GHC.Base.Maybe GHC.Base.String
+                   = case ipv3 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x1
+                       -> GHC.Base.Just @ GHC.Base.String (XMonad.My.Log.loggers21 x1) }
+                 } in
+                 (# ipv2,
+                    (case ipv4 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x1
+                       -> let {
+                            x2 :: GHC.Base.String
+                            = case XMonad.My.Log.loggers18 x1 of wild2 {
+                                [] -> GHC.Types.[] @ GHC.Types.Char
+                                : ipv6 ipv7
+                                -> let {
+                                     z :: [GHC.Types.Char]
+                                     = letrec {
+                                         go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                         = \ (ds7 :: [GHC.Types.Char]) ->
+                                           case ds7 of wild3 {
+                                             [] -> XMonad.My.Log.loggers14
+                                             : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                       } in
+                                       go wild2
+                                   } in
+                                   letrec {
+                                     go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                     = \ (ds7 :: [GHC.Types.Char]) ->
+                                       case ds7 of wild3 {
+                                         [] -> z : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                   } in
+                                   go (GHC.Types.[] @ GHC.Types.Char) }
+                          } in
+                          GHC.Base.Just @ GHC.Base.String (XMonad.My.Log.loggers_x x2) },
+                     eta) #) } } }) -}
+1c03f735105cd516e2ab540109f4ef1a
+  loggers18 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbClick
+                   XMonad.My.Log.loggers20
+                   XMonad.My.Log.loggers19) -}
+769c72e8cd6986a9f7b80bb16089728c
+  loggers19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "volstat display"#) -}
+50321a0bab1e74d8ab1e473c8652475c
+  loggers2 :: [XMonad.Util.Loggers.Logger]
+  {- Unfolding: (GHC.Types.:
+                   @ XMonad.Util.Loggers.Logger
+                   XMonad.My.Log.loggers23
+                     `cast`
+                   (Trans
+                        (<XMonad.Core.XConf>_R
+                         ->_R Trans
+                                  (<XMonad.Core.XState>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <(GHC.Base.Maybe GHC.Base.String,
+                                                   XMonad.Core.XState)>_R))
+                                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                            <XMonad.Core.XState>_N
+                                            <GHC.Types.IO>_R
+                                            <GHC.Base.Maybe GHC.Base.String>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <XMonad.Core.XConf>_R
+                                       <Control.Monad.Trans.State.Lazy.StateT
+                                          XMonad.Core.XState GHC.Types.IO>_R
+                                       <GHC.Base.Maybe GHC.Base.String>_N))
+                             (Sym (XMonad.Core.N:X[0]) <GHC.Base.Maybe GHC.Base.String>_N)))
+                   XMonad.My.Log.loggers3) -}
+ee7c9acb7206db3e5353a39553b054a5
+  loggers20 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+6bd09b38f41403431a8a9fb38391159f
+  loggers21 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbClick
+                   XMonad.My.Log.loggers12
+                   XMonad.My.Log.loggers22) -}
+a7cdf616a005d92ae5563061496b7eae
+  loggers22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "volstat toggle"#) -}
+87f48dc219b45f0088b625ec72cb95f6
+  loggers23 ::
+    XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Base.Maybe GHC.Base.String, XMonad.Core.XState) #)
+  {- Arity: 3,
+     Unfolding: (\ (eta2 :: XMonad.Core.XConf)
+                   (eta :: XMonad.Core.XState)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Process.runInteractiveCommand1
+                        XMonad.My.Log.loggers_w3
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,,,) ds out ds2 ds3 ->
+                 case GHC.Prim.catch#
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        @ GHC.Exception.SomeException
+                        (GHC.Magic.lazy
+                           @ (GHC.Types.IO (GHC.Base.Maybe GHC.Base.String))
+                           (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.IO.Handle.Internals.wantReadableHandle_1
+                                   @ GHC.Base.String
+                                   GHC.IO.Handle.Text.hGetLine4
+                                   out
+                                   GHC.IO.Handle.Text.hGetLine2
+                                     `cast`
+                                   (<GHC.IO.Handle.Types.Handle__>_R
+                                    ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                                   eta3 of ds4 { (#,#) ipv2 ipv3 ->
+                            (# ipv2, GHC.Base.Just @ GHC.Base.String ipv3 #) })
+                             `cast`
+                           (Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)))
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)
+                        XMonad.Util.Loggers.aumixVolume3
+                        ipv of ds4 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    (case ipv3 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x
+                       -> let {
+                            x1 :: GHC.Base.String
+                            = case x of wild2 {
+                                [] -> GHC.Types.[] @ GHC.Types.Char
+                                : ipv4 ipv5
+                                -> let {
+                                     z :: [GHC.Types.Char]
+                                     = letrec {
+                                         go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                         = \ (ds7 :: [GHC.Types.Char]) ->
+                                           case ds7 of wild3 {
+                                             [] -> XMonad.My.Log.loggers14
+                                             : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                       } in
+                                       go wild2
+                                   } in
+                                   letrec {
+                                     go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                     = \ (ds7 :: [GHC.Types.Char]) ->
+                                       case ds7 of wild3 {
+                                         [] -> z : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                   } in
+                                   go (GHC.Types.[] @ GHC.Types.Char) }
+                          } in
+                          GHC.Base.Just @ GHC.Base.String (XMonad.My.Log.loggers_x x1) },
+                     eta) #) } } }) -}
+1ba3f1777400b214c520e73498081f46
+  loggers24 ::
+    XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Base.Maybe GHC.Base.String, XMonad.Core.XState) #)
+  {- Arity: 3,
+     Unfolding: (\ (eta2 :: XMonad.Core.XConf)
+                   (eta :: XMonad.Core.XState)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case XMonad.Util.Loggers.$wdate
+                        XMonad.My.Log.loggers_w4
+                        eta
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    (case ipv1 of wild { (,) a1 s' ->
+                     case a1 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x
+                       -> let {
+                            x1 :: GHC.Base.String
+                            = case x of wild2 {
+                                [] -> GHC.Types.[] @ GHC.Types.Char
+                                : ipv2 ipv3
+                                -> let {
+                                     z :: [GHC.Types.Char]
+                                     = letrec {
+                                         go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                         = \ (ds1 :: [GHC.Types.Char]) ->
+                                           case ds1 of wild3 {
+                                             [] -> XMonad.My.Log.loggers16
+                                             : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                       } in
+                                       go wild2
+                                   } in
+                                   letrec {
+                                     go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                     = \ (ds1 :: [GHC.Types.Char]) ->
+                                       case ds1 of wild3 {
+                                         [] -> z : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                   } in
+                                   go (GHC.Types.[] @ GHC.Types.Char) }
+                          } in
+                          GHC.Base.Just @ GHC.Base.String (XMonad.My.Log.loggers_x x1) } },
+                     case ipv1 of wild { (,) a1 s' -> s' }) #) }) -}
+a590e6a9591951f2201825b198ccbe09
+  loggers3 :: [XMonad.Util.Loggers.Logger]
+  {- Unfolding: (GHC.Types.:
+                   @ XMonad.Util.Loggers.Logger
+                   XMonad.My.Log.loggers17
+                     `cast`
+                   (Trans
+                        (<XMonad.Core.XConf>_R
+                         ->_R Trans
+                                  (<XMonad.Core.XState>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <(GHC.Base.Maybe GHC.Base.String,
+                                                   XMonad.Core.XState)>_R))
+                                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                            <XMonad.Core.XState>_N
+                                            <GHC.Types.IO>_R
+                                            <GHC.Base.Maybe GHC.Base.String>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <XMonad.Core.XConf>_R
+                                       <Control.Monad.Trans.State.Lazy.StateT
+                                          XMonad.Core.XState GHC.Types.IO>_R
+                                       <GHC.Base.Maybe GHC.Base.String>_N))
+                             (Sym (XMonad.Core.N:X[0]) <GHC.Base.Maybe GHC.Base.String>_N)))
+                   XMonad.My.Log.loggers4) -}
+ca56952f77f1d2dc1b855f1f9ba061f7
+  loggers4 :: [XMonad.Util.Loggers.Logger]
+  {- Unfolding: (GHC.Types.:
+                   @ XMonad.Util.Loggers.Logger
+                   XMonad.My.Log.loggers13
+                     `cast`
+                   (Trans
+                        (<XMonad.Core.XConf>_R
+                         ->_R Trans
+                                  (<XMonad.Core.XState>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <(GHC.Base.Maybe GHC.Base.String,
+                                                   XMonad.Core.XState)>_R))
+                                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                            <XMonad.Core.XState>_N
+                                            <GHC.Types.IO>_R
+                                            <GHC.Base.Maybe GHC.Base.String>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <XMonad.Core.XConf>_R
+                                       <Control.Monad.Trans.State.Lazy.StateT
+                                          XMonad.Core.XState GHC.Types.IO>_R
+                                       <GHC.Base.Maybe GHC.Base.String>_N))
+                             (Sym (XMonad.Core.N:X[0]) <GHC.Base.Maybe GHC.Base.String>_N)))
+                   XMonad.My.Log.loggers5) -}
+68ae839697afe79c5e6c70a453694583
+  loggers5 :: [XMonad.Util.Loggers.Logger]
+  {- Unfolding: (GHC.Types.:
+                   @ XMonad.Util.Loggers.Logger
+                   XMonad.My.Log.loggers6
+                     `cast`
+                   (Trans
+                        (<XMonad.Core.XConf>_R
+                         ->_R Trans
+                                  (<XMonad.Core.XState>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <(GHC.Base.Maybe GHC.Base.String,
+                                                   XMonad.Core.XState)>_R))
+                                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                            <XMonad.Core.XState>_N
+                                            <GHC.Types.IO>_R
+                                            <GHC.Base.Maybe GHC.Base.String>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <XMonad.Core.XConf>_R
+                                       <Control.Monad.Trans.State.Lazy.StateT
+                                          XMonad.Core.XState GHC.Types.IO>_R
+                                       <GHC.Base.Maybe GHC.Base.String>_N))
+                             (Sym (XMonad.Core.N:X[0]) <GHC.Base.Maybe GHC.Base.String>_N)))
+                   (GHC.Types.[] @ XMonad.Util.Loggers.Logger)) -}
+929ee0c4e20f80143a7ffc594f6ff3bc
+  loggers6 ::
+    XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Base.Maybe GHC.Base.String, XMonad.Core.XState) #)
+  {- Arity: 3,
+     Unfolding: (\ (eta2 :: XMonad.Core.XConf)
+                   (eta :: XMonad.Core.XState)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Process.runInteractiveCommand1
+                        XMonad.My.Log.loggers_w
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,,,) ds out ds2 ds3 ->
+                 case GHC.Prim.catch#
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        @ GHC.Exception.SomeException
+                        (GHC.Magic.lazy
+                           @ (GHC.Types.IO (GHC.Base.Maybe GHC.Base.String))
+                           (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.IO.Handle.Internals.wantReadableHandle_1
+                                   @ GHC.Base.String
+                                   GHC.IO.Handle.Text.hGetLine4
+                                   out
+                                   GHC.IO.Handle.Text.hGetLine2
+                                     `cast`
+                                   (<GHC.IO.Handle.Types.Handle__>_R
+                                    ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                                   eta3 of ds4 { (#,#) ipv2 ipv3 ->
+                            (# ipv2, GHC.Base.Just @ GHC.Base.String ipv3 #) })
+                             `cast`
+                           (Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)))
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)
+                        XMonad.Util.Loggers.aumixVolume3
+                        ipv of ds4 { (#,#) ipv2 ipv3 ->
+                 let {
+                   ipv4 :: GHC.Base.Maybe GHC.Base.String
+                   = case ipv3 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x1
+                       -> GHC.Base.Just
+                            @ GHC.Base.String
+                            (XMonad.Hooks.DynamicLog.$wshorten 25# x1) }
+                 } in
+                 (# ipv2,
+                    (case ipv4 of wild1 {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                       GHC.Base.Just x1
+                       -> let {
+                            x2 :: GHC.Base.String
+                            = case XMonad.My.Log.loggers10 x1 of wild2 {
+                                [] -> GHC.Types.[] @ GHC.Types.Char
+                                : ipv6 ipv7
+                                -> let {
+                                     z :: [GHC.Types.Char]
+                                     = letrec {
+                                         go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                         = \ (ds7 :: [GHC.Types.Char]) ->
+                                           case ds7 of wild3 {
+                                             [] -> XMonad.My.Log.loggers7
+                                             : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                       } in
+                                       go wild2
+                                   } in
+                                   letrec {
+                                     go :: [GHC.Types.Char] -> [GHC.Types.Char] {- Arity: 1 -}
+                                     = \ (ds7 :: [GHC.Types.Char]) ->
+                                       case ds7 of wild3 {
+                                         [] -> z : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                                   } in
+                                   go (GHC.Types.[] @ GHC.Types.Char) }
+                          } in
+                          GHC.Base.Just @ GHC.Base.String (XMonad.My.Log.loggers_x x2) },
+                     eta) #) } } }) -}
+b88a4eb0834260679902e081e68432ab
+  loggers7 :: GHC.Base.String
+  {- Unfolding: (XMonad.My.Log.loggers_sepClr
+                   XMonad.My.Log.loggers8) -}
+6dfcf5c7eb09f4437f34e0b3c930de41
+  loggers8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   " "#
+                   XMonad.My.Log.sep) -}
+bceb7d4b2d86037e7d7ab23417b4bc12
+  loggers9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "#aaaaaa"#) -}
+3ead50a31a9da9fb9657015c5458d1bf
+  loggers_sep' :: GHC.Base.String
+  {- Unfolding: (case XMonad.My.Log.sep of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : ipv ipv1
+                   -> GHC.CString.unpackAppendCString#
+                        " "#
+                        XMonad.My.Log.loggers15 }) -}
+2e92abe0a6e8bcd14de527b3819faa3c
+  loggers_sepClr :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbColor
+                   XMonad.My.Log.loggers9
+                   XMonad.My.Theme.normalBG) -}
+2ce09a52747613e75754e97f7813fd23
+  loggers_w :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "mpdstat"#) -}
+d15e3b101a6c21b356bbe5fc5948b8d2
+  loggers_w1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "wifistat"#) -}
+7f62ae49f1dfc1f92bae19db28b98599
+  loggers_w2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "volstat"#) -}
+ed73e82694c2a0ac8ed0c41ac88b19fc
+  loggers_w3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "batstat"#) -}
+a3afb578dd3053300a6a05bc1d3d7daa
+  loggers_w4 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "%H:%M %a %e"#) -}
+84936252a81cae0729e7448b3c49b812
+  loggers_x :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbColor
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   XMonad.My.Theme.normalBG) -}
+3904a0197ecf8af0a4952bc6a087e8c0
+  panel ::
+    GHC.Base.Maybe GHC.IO.Handle.Types.Handle
+    -> XMonad.Hooks.DynamicLog.PP
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (mh :: GHC.Base.Maybe GHC.IO.Handle.Types.Handle) ->
+                 XMonad.Hooks.DynamicLog.PP
+                   XMonad.My.Log.panel15
+                   XMonad.My.Log.panel14
+                   XMonad.My.Log.panel13
+                   XMonad.My.Log.panel12
+                   XMonad.My.Log.panel10
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   XMonad.My.Log.panel9
+                   XMonad.Hooks.DynamicLog.defaultPP1
+                   XMonad.My.Log.panel4
+                   XMonad.My.Log.panel2
+                   XMonad.Actions.DynamicWorkspaceOrder.getSortByOrder1
+                     `cast`
+                   (Trans
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <XMonad.Core.XConf>_R
+                                  <Control.Monad.Trans.State.Lazy.StateT
+                                     XMonad.Core.XState GHC.Types.IO>_R
+                                  <XMonad.Util.WorkspaceCompare.WorkspaceSort>_N))
+                        (Sym (XMonad.Core.N:X[0]) <XMonad.Util.WorkspaceCompare.WorkspaceSort>_N))
+                   XMonad.My.Log.loggers
+                   (case mh of wild {
+                      GHC.Base.Nothing
+                      -> XMonad.My.Log.panel1
+                           `cast`
+                         (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      GHC.Base.Just x
+                      -> (GHC.IO.Handle.Text.hPutStrLn1 x)
+                           `cast`
+                         (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) })) -}
+1628aeccf9076f2e714bf361a6277c23
+  panel1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta, GHC.Tuple.() #)) -}
+28fe42475b1848bae9d240adb2246b10
+  panel10 :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Base.String) ->
+                 XMonad.My.Log.panel11
+                   (XMonad.Hooks.DynamicLog.wrap
+                      XMonad.My.Log.loggers16
+                      XMonad.My.Log.loggers16
+                      x)) -}
+166f504a35e9f06472fc65991adcc6ed
+  panel11 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbColor
+                   XMonad.My.Theme.urgentFG
+                   XMonad.My.Theme.urgentBG) -}
+1486cd9c8ea413393e63eb7604e48534
+  panel12 :: XMonad.Core.WorkspaceId -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: XMonad.Core.WorkspaceId) ->
+                 GHC.Types.[] @ GHC.Types.Char) -}
+67f41f4c3fe11b6da2ef0bc4e81ba0fc
+  panel13 :: XMonad.Core.WorkspaceId -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (ws :: XMonad.Core.WorkspaceId) ->
+                 XMonad.My.Log.loggers_x
+                   (XMonad.Util.Lemonbar.lbClick
+                      XMonad.My.Log.loggers12
+                      (GHC.CString.unpackAppendCString# "xmonadctl view-"# ws)
+                      (XMonad.Hooks.DynamicLog.wrap
+                         XMonad.My.Log.loggers16
+                         XMonad.My.Log.loggers16
+                         ws))) -}
+42572171b6defbad0e6c4ec8c305868e
+  panel14 :: XMonad.Core.WorkspaceId -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (ws :: XMonad.Core.WorkspaceId) ->
+                 XMonad.My.Log.loggers_x
+                   (case XMonad.Util.Lemonbar.lbClick
+                           XMonad.My.Log.loggers12
+                           (GHC.CString.unpackAppendCString# "xmonadctl view-"# ws)
+                           (XMonad.Hooks.DynamicLog.wrap
+                              XMonad.My.Log.loggers16
+                              XMonad.My.Log.loggers16
+                              ws) of wild {
+                      [] -> GHC.Types.[] @ GHC.Types.Char
+                      : ipv ipv1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           XMonad.Util.Lemonbar.lbUnderline2
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              wild
+                              XMonad.Util.Lemonbar.lbUnderline1) })) -}
+93ab66e98365dbe77a974429c85e0067
+  panel15 :: XMonad.Core.WorkspaceId -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (ws :: XMonad.Core.WorkspaceId) ->
+                 XMonad.My.Log.panel16
+                   (XMonad.Util.Lemonbar.lbClick
+                      XMonad.My.Log.loggers12
+                      (GHC.CString.unpackAppendCString# "xmonadctl view-"# ws)
+                      (XMonad.Hooks.DynamicLog.wrap
+                         XMonad.My.Log.loggers16
+                         XMonad.My.Log.loggers16
+                         ws))) -}
+4b241cc715d1871bc616bf43f0581f9d
+  panel16 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbColor
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   XMonad.My.Theme.focusBG) -}
+bfb3287c2ec4ccb3822afbc78d34edfb
+  panel2 :: [GHC.Base.String] -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [GHC.Base.String]) ->
+                 case XMonad.My.Log.$wlvl w of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Base.String ww1 ww2 }) -}
+6e9048f3aa7c3be4b849174d55bffaaf
+  panel3 :: [GHC.Base.String]
+  {- Strictness: x -}
+eff0782a367f1018d67ca459c1ba2faf
+  panel4 :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: GHC.Base.String) ->
+                 XMonad.My.Log.loggers_x
+                   (case XMonad.My.Log.panel7
+                           (XMonad.Hooks.DynamicLog.wrap
+                              XMonad.My.Log.loggers16
+                              XMonad.My.Log.loggers16
+                              x) of wild {
+                      [] -> GHC.Types.[] @ GHC.Types.Char
+                      : ipv ipv1
+                      -> GHC.Base.++ @ GHC.Types.Char XMonad.My.Log.panel5 wild })) -}
+853ec7129b06eaa1561a060bfb44de73
+  panel5 :: GHC.Base.String
+  {- Unfolding: (XMonad.My.Log.panel6 XMonad.My.Log.sep) -}
+fe39015955480399241253607a69171e
+  panel6 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbColor
+                   XMonad.My.Log.loggers9
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a8e9d75438a5518da877418e3ed7697d
+  panel7 :: GHC.Base.String -> GHC.Base.String
+  {- Unfolding: (XMonad.Util.Lemonbar.lbClick
+                   XMonad.My.Log.loggers12
+                   XMonad.My.Log.panel8) -}
+ba10a5ab27646e730d3ad2d2391df7b0
+  panel8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "xmonadctl next-layout"#) -}
+e434821d610adfbd4fe5b3da15e28167
+  panel9 :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (x :: GHC.Base.String) ->
+                 XMonad.My.Log.loggers_x
+                   (case XMonad.Hooks.DynamicLog.$wshorten 20# x of wild {
+                      [] -> GHC.Types.[] @ GHC.Types.Char
+                      : ipv ipv1
+                      -> case GHC.Base.++
+                                @ GHC.Types.Char
+                                XMonad.My.Log.loggers16
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   wild
+                                   XMonad.My.Log.loggers16) of wild1 {
+                           [] -> GHC.Types.[] @ GHC.Types.Char
+                           : ipv2 ipv3
+                           -> GHC.Base.++ @ GHC.Types.Char XMonad.My.Log.panel5 wild1 } })) -}
+e3f0cc6911d1a6d3e62d2c7e441d4ded
+  panel_go :: [[GHC.Types.Char]] -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+0609533b25ee11416efc43448092a3fb
+  sep :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCStringUtf8# "\\194\\166"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

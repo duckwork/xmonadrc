@@ -1,3 +1,4 @@
+{-# OPTIONS -fno-warn-type-defaults #-}
 module XMonad.My.Keys
     ( keys
     , rawKeys
@@ -11,19 +12,13 @@ import XMonad.Actions.CycleWS
 import XMonad.Actions.DynamicWorkspaces
 import XMonad.Actions.Promote
 import XMonad.Actions.GroupNavigation
-import XMonad.Actions.WindowGo
-import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.ManageHelpers
-import XMonad.Hooks.Place
 import XMonad.Layout.MouseResizableTile (MRTMessage(..))
 import XMonad.Layout.MultiToggle (Toggle(..))
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.ToggleLayouts hiding (Toggle)
 import XMonad.My.Commands
 import XMonad.My.Helpers
-import XMonad.My.Preferences
 import XMonad.Util.EZConfig
-import XMonad.Util.SpawnNamedPipe (getNamedPipe)
 import qualified Data.Map as M
 import qualified XMonad.Actions.DynamicWorkspaceOrder as DO
 import qualified XMonad.Actions.FlexibleResize as Flex
@@ -75,13 +70,7 @@ clientKeys _ =
     ]
 
 workspaceKeys :: XConfig Layout -> [(String, X ())]
-workspaceKeys c =
-    -- [ ("M-" ++ mask ++ [key], action tag)
-    --   | (tag, key) <- zip (workspaces c) "123456789"
-    --   , (mask, action) <- [ ("", windows . W.greedyView)
-    --                       , ("S-", windows . W.shift)
-    --                       ]
-    -- ] ++
+workspaceKeys = \_ ->
     zip (zipWith (++) (repeat "M-") (map show [1..9])) (map (withNthWorkspace W.greedyView) [0..])
     ++
     zip (zipWith (++) (repeat "M-S-") (map show [1..9])) (map (withNthWorkspace W.shift) [0..])
@@ -89,7 +78,7 @@ workspaceKeys c =
     [ (m ++ "M-" ++ k, f d NonEmptyWS)
     | (k, d) <- [ (",", Prev), (".", Next) ]
     , (m, f) <- [ ("", DO.moveTo)
-                , ("S-", \d t -> DO.shiftTo d t >> DO.moveTo d t)
+                , ("S-", \d' t -> DO.shiftTo d' t >> DO.moveTo d' t)
                 , ("C-", DO.swapWith)
                 ]
     ] ++

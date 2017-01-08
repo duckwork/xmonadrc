@@ -3,16 +3,13 @@ module XMonad.My.Helpers where
 import Control.Monad
 import Data.List
 import Data.Maybe
-import Data.Monoid
 import XMonad
 import XMonad.Actions.FloatKeys
-import XMonad.Hooks.Place
-import XMonad.My.Preferences
+-- import XMonad.Hooks.Place
 import XMonad.Util.PositionStore
 import XMonad.Util.SpawnNamedPipe (spawnNamedPipe)
-import XMonad.Util.WindowProperties (getProp32)
 import qualified Data.Map as M
-import qualified XMonad.My.Theming as My
+import qualified XMonad.My.Theme as My
 import qualified XMonad.StackSet as W
 
 runLogHook :: X ()
@@ -23,10 +20,10 @@ toggleFloat = withFocused $ \w -> do
     floats <- gets (W.floating . windowset)
     if w `M.member` floats
        then withFocused $ windows . W.sink
-       else psPlace w placement
+       else psPlace w
 
-psPlace :: Window -> Placement -> X ()
-psPlace win pl = withDisplay $ \d -> do
+psPlace :: Window -> X ()
+psPlace win = withDisplay $ \d -> do
     ps <- getPosStore
     ws <- gets windowset
     wa <- io $ getWindowAttributes d win
@@ -54,9 +51,9 @@ setFullscreenSupported = withDisplay $ \dpy -> do
         changeProperty32 dpy r a aTOM propModeReplace (nub $ fromIntegral fs : supportedList)
 
 lemonbar :: X ()
-lemonbar = spawnNamedPipe lemonbar "xpanel"
+lemonbar = spawnNamedPipe lemonbar' "xpanel"
   where
-    lemonbar 
+    lemonbar' 
       = concat $ intersperse " "
         [ "lemonbar"--, "-d"
         , "-n xpanel"

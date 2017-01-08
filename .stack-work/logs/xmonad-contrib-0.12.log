@@ -1,0 +1,1075 @@
+Configuring xmonad-contrib-0.12...
+Preprocessing library xmonad-contrib-0.12...
+
+XMonad/Actions/GridSelect.hs:1:104: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[  1 of 256] Compiling XMonad.Util.WindowState ( XMonad/Util/WindowState.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/WindowState.o )
+
+XMonad/Util/WindowState.hs:76:9: warning: [-Wredundant-constraints]
+    • Redundant constraint: Read s
+    • In the type signature for:
+           read' :: Read s => String -> Maybe s
+      In an equation for ‘get’:
+          get
+            = StateQuery $ read' <$> get' undefined
+            where
+                get' :: (Maybe s) -> Query String
+                get' x = stringProperty (typePropertyName x)
+                read' :: (Read s) => String -> Maybe s
+                read' "" = Nothing
+                read' s = Just $ read s
+      In the instance declaration for
+        ‘MonadState (Maybe s) (StateQuery s)’
+[  2 of 256] Compiling XMonad.Util.Ungrab ( XMonad/Util/Ungrab.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Ungrab.o )
+[  3 of 256] Compiling XMonad.Util.StringProp ( XMonad/Util/StringProp.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/StringProp.o )
+[  4 of 256] Compiling XMonad.Util.Replace ( XMonad/Util/Replace.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Replace.o )
+[  5 of 256] Compiling XMonad.Util.NoTaskbar ( XMonad/Util/NoTaskbar.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/NoTaskbar.o )
+[  6 of 256] Compiling XMonad.Util.CustomKeys ( XMonad/Util/CustomKeys.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/CustomKeys.o )
+[  7 of 256] Compiling XMonad.Layout.ThreeColumns ( XMonad/Layout/ThreeColumns.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ThreeColumns.o )
+[  8 of 256] Compiling XMonad.Layout.StackTile ( XMonad/Layout/StackTile.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/StackTile.o )
+[  9 of 256] Compiling XMonad.Layout.Spiral ( XMonad/Layout/Spiral.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Spiral.o )
+[ 10 of 256] Compiling XMonad.Layout.Roledex ( XMonad/Layout/Roledex.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Roledex.o )
+
+XMonad/Layout/Roledex.hs:50:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Eq a
+    • In the type signature for:
+           roledexLayout :: Eq a =>
+                            Rectangle -> W.Stack a -> X ([(a, Rectangle)], Maybe (Roledex a))
+[ 11 of 256] Compiling XMonad.Layout.ResizableTile ( XMonad/Layout/ResizableTile.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ResizableTile.o )
+[ 12 of 256] Compiling XMonad.Layout.PerWorkspace ( XMonad/Layout/PerWorkspace.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/PerWorkspace.o )
+
+XMonad/Layout/PerWorkspace.hs:85:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 a, LayoutClass l2 a)
+    • In the type signature for:
+           modWorkspaces :: (LayoutClass l1 a, LayoutClass l2 a) =>
+                            [WorkspaceId] -> (l2 a -> l1 a) -> l2 a -> PerWorkspace l1 l2 a
+
+XMonad/Layout/PerWorkspace.hs:102:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the instance declaration for
+        ‘LayoutClass (PerWorkspace l1 l2) a’
+[ 13 of 256] Compiling XMonad.Layout.PerScreen ( XMonad/Layout/PerScreen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/PerScreen.o )
+
+XMonad/Layout/PerScreen.hs:42:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 a, LayoutClass l2 a)
+    • In the type signature for:
+           ifWider :: (LayoutClass l1 a, LayoutClass l2 a) =>
+                      Dimension -> l1 a -> l2 a -> PerScreen l1 l2 a
+
+XMonad/Layout/PerScreen.hs:62:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the instance declaration for ‘LayoutClass (PerScreen l1 l2) a’
+[ 14 of 256] Compiling XMonad.Layout.OneBig ( XMonad/Layout/OneBig.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/OneBig.o )
+[ 15 of 256] Compiling XMonad.Layout.MultiToggle ( XMonad/Layout/MultiToggle.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MultiToggle.o )
+
+XMonad/Layout/MultiToggle.hs:104:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           unEL :: LayoutClass l a =>
+                   EL l a
+                   -> (forall (l' :: * -> *). LayoutClass l' a => l' a -> b) -> b
+
+XMonad/Layout/MultiToggle.hs:107:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           deEL :: LayoutClass l a => EL l a -> l a
+
+XMonad/Layout/MultiToggle.hs:110:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           transform' :: (Transformer t a, LayoutClass l a) =>
+                         t -> EL l a -> EL l a
+[ 16 of 256] Compiling XMonad.Layout.MultiColumns ( XMonad/Layout/MultiColumns.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MultiColumns.o )
+[ 17 of 256] Compiling XMonad.Layout.MosaicAlt ( XMonad/Layout/MosaicAlt.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MosaicAlt.o )
+[ 18 of 256] Compiling XMonad.Layout.Mosaic ( XMonad/Layout/Mosaic.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Mosaic.o )
+[ 19 of 256] Compiling XMonad.Layout.IfMax ( XMonad/Layout/IfMax.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/IfMax.o )
+
+XMonad/Layout/IfMax.hs:89:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 w, LayoutClass l2 w)
+    • In the type signature for:
+           ifMax :: (LayoutClass l1 w, LayoutClass l2 w) =>
+                    Int -> l1 w -> l2 w -> IfMax l1 l2 w
+[ 20 of 256] Compiling XMonad.Layout.HintedGrid ( XMonad/Layout/HintedGrid.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/HintedGrid.o )
+[ 21 of 256] Compiling XMonad.Layout.Simplest ( XMonad/Layout/Simplest.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Simplest.o )
+[ 22 of 256] Compiling XMonad.Layout.GridVariants ( XMonad/Layout/GridVariants.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/GridVariants.o )
+[ 23 of 256] Compiling XMonad.Layout.FixedColumn ( XMonad/Layout/FixedColumn.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/FixedColumn.o )
+[ 24 of 256] Compiling XMonad.Layout.Dishes ( XMonad/Layout/Dishes.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Dishes.o )
+[ 25 of 256] Compiling XMonad.Util.Invisible ( XMonad/Util/Invisible.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Invisible.o )
+
+XMonad/Util/Invisible.hs:25:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+XMonad/Util/Invisible.hs:35:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the instance declaration for ‘Read (Invisible m a)’
+
+XMonad/Util/Invisible.hs:38:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Monad m
+    • In the instance declaration for ‘Show (Invisible m a)’
+[ 26 of 256] Compiling XMonad.Layout.Cross ( XMonad/Layout/Cross.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Cross.o )
+[ 27 of 256] Compiling XMonad.Layout.Column ( XMonad/Layout/Column.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Column.o )
+[ 28 of 256] Compiling XMonad.Layout.Circle ( XMonad/Layout/Circle.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Circle.o )
+[ 29 of 256] Compiling XMonad.Util.Stack ( XMonad/Util/Stack.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Stack.o )
+[ 30 of 256] Compiling XMonad.Layout.Groups ( XMonad/Layout/Groups.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Groups.o )
+[ 31 of 256] Compiling XMonad.Hooks.XPropManage ( XMonad/Hooks/XPropManage.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/XPropManage.o )
+[ 32 of 256] Compiling XMonad.Hooks.Script ( XMonad/Hooks/Script.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/Script.o )
+[ 33 of 256] Compiling XMonad.Hooks.InsertPosition ( XMonad/Hooks/InsertPosition.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/InsertPosition.o )
+
+XMonad/Hooks/InsertPosition.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show i
+    • In the type signature for:
+           viewingWs :: (Eq a, Eq s, Eq i, Show i) =>
+                        a
+                        -> (W.StackSet i l a s sd -> W.StackSet i l a s sd)
+                        -> W.StackSet i l a s sd
+                        -> W.StackSet i l a s sd
+[ 34 of 256] Compiling XMonad.Hooks.FadeInactive ( XMonad/Hooks/FadeInactive.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/FadeInactive.o )
+[ 35 of 256] Compiling XMonad.Hooks.FadeWindows ( XMonad/Hooks/FadeWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/FadeWindows.o )
+
+XMonad/Hooks/FadeWindows.hs:178:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Monoid m
+    • In the type signature for:
+           doS :: Monoid m => m -> Query m
+[ 36 of 256] Compiling XMonad.Util.WindowProperties ( XMonad/Util/WindowProperties.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/WindowProperties.o )
+[ 37 of 256] Compiling XMonad.Layout.LayoutBuilder ( XMonad/Layout/LayoutBuilder.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LayoutBuilder.o )
+
+XMonad/Layout/LayoutBuilder.hs:182:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a,
+                              Eq a,
+                              LayoutClass l1 a,
+                              LayoutClass l2 a,
+                              LayoutClass l3 a)
+    • In the type signature for:
+           layoutN :: (Read a, Eq a, LayoutClass l1 a, LayoutClass l2 a,
+                       LayoutClass l3 a) =>
+                      Int
+                      -> SubBox
+                      -> Maybe SubBox
+                      -> l1 a
+                      -> LayoutB l2 l3 p a
+                      -> LayoutB l1 (LayoutB l2 l3 p) () a
+
+XMonad/Layout/LayoutBuilder.hs:193:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a,
+                              Eq a,
+                              LayoutClass l1 a,
+                              LayoutClass l2 a,
+                              LayoutClass l3 a)
+    • In the type signature for:
+           layoutR :: (Read a, Eq a, LayoutClass l1 a, LayoutClass l2 a,
+                       LayoutClass l3 a) =>
+                      Rational
+                      -> Rational
+                      -> SubBox
+                      -> Maybe SubBox
+                      -> l1 a
+                      -> LayoutB l2 l3 p a
+                      -> LayoutB l1 (LayoutB l2 l3 p) p a
+
+XMonad/Layout/LayoutBuilder.hs:209:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a,
+                              Eq a,
+                              LayoutClass l1 a,
+                              LayoutClass l2 a,
+                              LayoutClass l3 a,
+                              Predicate p a,
+                              Predicate p' a)
+    • In the type signature for:
+           layoutP :: (Read a, Eq a, LayoutClass l1 a, LayoutClass l2 a,
+                       LayoutClass l3 a, Predicate p a, Predicate p' a) =>
+                      p
+                      -> SubBox
+                      -> Maybe SubBox
+                      -> l1 a
+                      -> LayoutB l2 l3 p' a
+                      -> LayoutB l1 (LayoutB l2 l3 p') p a
+
+XMonad/Layout/LayoutBuilder.hs:220:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a, Eq a, LayoutClass l1 a)
+    • In the type signature for:
+           layoutAll :: (Read a, Eq a, LayoutClass l1 a) =>
+                        SubBox -> l1 a -> LayoutB l1 Full () a
+
+XMonad/Layout/LayoutBuilder.hs:334:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l2 a,
+                              Read a,
+                              Show a,
+                              Eq a,
+                              Typeable a)
+    • In the type signature for:
+           sendSub :: (LayoutClass l1 a, LayoutClass l2 a, Read a, Show a,
+                       Eq a, Typeable a) =>
+                      LayoutB l1 l2 p a -> SomeMessage -> X (Maybe (LayoutB l1 l2 p a))
+
+XMonad/Layout/LayoutBuilder.hs:352:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 a,
+                              Read a,
+                              Show a,
+                              Eq a,
+                              Typeable a)
+    • In the type signature for:
+           sendNext :: (LayoutClass l1 a, LayoutClass l2 a, Read a, Show a,
+                        Eq a, Typeable a) =>
+                       LayoutB l1 l2 p a -> SomeMessage -> X (Maybe (LayoutB l1 l2 p a))
+[ 38 of 256] Compiling XMonad.Layout.LayoutBuilderP ( XMonad/Layout/LayoutBuilderP.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LayoutBuilderP.o )
+
+XMonad/Layout/LayoutBuilderP.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a,
+                              Eq a,
+                              LayoutClass l1 a,
+                              LayoutClass l2 a,
+                              LayoutClass l3 a,
+                              Predicate p a)
+    • In the type signature for:
+           layoutP :: (Read a, Eq a, LayoutClass l1 a, LayoutClass l2 a,
+                       LayoutClass l3 a, Predicate p a) =>
+                      p
+                      -> B.SubBox
+                      -> Maybe B.SubBox
+                      -> l1 a
+                      -> LayoutP p l2 l3 a
+                      -> LayoutP p l1 (LayoutP p l2 l3) a
+
+XMonad/Layout/LayoutBuilderP.hs:73:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a, Eq a, LayoutClass l1 a)
+    • In the type signature for:
+           layoutAll :: (Read a, Eq a, LayoutClass l1 a, Predicate p a) =>
+                        B.SubBox -> l1 a -> LayoutP p l1 Full a
+
+XMonad/Layout/LayoutBuilderP.hs:115:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l2 a,
+                              Read a,
+                              Show a,
+                              Eq a,
+                              Typeable a,
+                              Predicate p a)
+    • In the type signature for:
+           sendSub :: (LayoutClass l1 a, LayoutClass l2 a, Read a, Show a,
+                       Eq a, Typeable a, Predicate p a) =>
+                      LayoutP p l1 l2 a -> SomeMessage -> X (Maybe (LayoutP p l1 l2 a))
+
+XMonad/Layout/LayoutBuilderP.hs:133:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 a,
+                              Read a,
+                              Show a,
+                              Eq a,
+                              Typeable a,
+                              Predicate p a)
+    • In the type signature for:
+           sendNext :: (LayoutClass l1 a, LayoutClass l2 a, Read a, Show a,
+                        Eq a, Typeable a, Predicate p a) =>
+                       LayoutP p l1 l2 a -> SomeMessage -> X (Maybe (LayoutP p l1 l2 a))
+[ 39 of 256] Compiling XMonad.Util.RemoteWindows ( XMonad/Util/RemoteWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/RemoteWindows.o )
+
+XMonad/Util/RemoteWindows.hs:41:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 40 of 256] Compiling XMonad.Hooks.SetWMName ( XMonad/Hooks/SetWMName.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/SetWMName.o )
+[ 41 of 256] Compiling XMonad.Hooks.ICCCMFocus ( XMonad/Hooks/ICCCMFocus.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ICCCMFocus.o )
+[ 42 of 256] Compiling XMonad.Hooks.DynamicProperty ( XMonad/Hooks/DynamicProperty.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DynamicProperty.o )
+
+XMonad/Hooks/DynamicProperty.hs:30:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 43 of 256] Compiling XMonad.Util.DebugWindow ( XMonad/Util/DebugWindow.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/DebugWindow.o )
+[ 44 of 256] Compiling XMonad.Hooks.DebugStack ( XMonad/Hooks/DebugStack.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DebugStack.o )
+[ 45 of 256] Compiling XMonad.Hooks.DebugKeyEvents ( XMonad/Hooks/DebugKeyEvents.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DebugKeyEvents.o )
+[ 46 of 256] Compiling XMonad.Hooks.DebugEvents ( XMonad/Hooks/DebugEvents.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DebugEvents.o )
+
+XMonad/Hooks/DebugEvents.hs:50:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+XMonad/Hooks/DebugEvents.hs:386:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Storable i
+    • In the type signature for:
+           quickFormat :: (Storable i, Integral i) =>
+                          [i] -> Decoder Bool -> X String
+[ 47 of 256] Compiling XMonad.Layout.TwoPane ( XMonad/Layout/TwoPane.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/TwoPane.o )
+[ 48 of 256] Compiling XMonad.Layout.LayoutScreens ( XMonad/Layout/LayoutScreens.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LayoutScreens.o )
+[ 49 of 256] Compiling XMonad.Layout.HintedTile ( XMonad/Layout/HintedTile.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/HintedTile.o )
+[ 50 of 256] Compiling XMonad.Layout.ToggleLayouts ( XMonad/Layout/ToggleLayouts.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ToggleLayouts.o )
+
+XMonad/Layout/ToggleLayouts.hs:55:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass lt a, LayoutClass lf a)
+    • In the type signature for:
+           toggleLayouts :: (LayoutClass lt a, LayoutClass lf a) =>
+                            lt a -> lf a -> ToggleLayouts lt lf a
+[ 51 of 256] Compiling XMonad.Layout.Square ( XMonad/Layout/Square.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Square.o )
+[ 52 of 256] Compiling XMonad.Layout.Grid ( XMonad/Layout/Grid.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Grid.o )
+[ 53 of 256] Compiling XMonad.Util.Cursor ( XMonad/Util/Cursor.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Cursor.o )
+[ 54 of 256] Compiling XMonad.Config.Bepo ( XMonad/Config/Bepo.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Bepo.o )
+[ 55 of 256] Compiling XMonad.Config.Azerty ( XMonad/Config/Azerty.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Azerty.o )
+[ 56 of 256] Compiling XMonad.Layout.Accordion ( XMonad/Layout/Accordion.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Accordion.o )
+[ 57 of 256] Compiling XMonad.Layout.LayoutModifier ( XMonad/Layout/LayoutModifier.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LayoutModifier.o )
+[ 58 of 256] Compiling XMonad.Layout.NoBorders ( XMonad/Layout/NoBorders.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/NoBorders.o )
+
+XMonad/Layout/NoBorders.hs:74:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           withBorder :: LayoutClass l a =>
+                         Dimension -> l a -> ModifiedLayout WithBorder l a
+
+XMonad/Layout/NoBorders.hs:101:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (SetsAmbiguous p,
+                              Read p,
+                              Show p,
+                              LayoutClass l a)
+    • In the type signature for:
+           lessBorders :: (SetsAmbiguous p, Read p, Show p,
+                           LayoutClass l a) =>
+                          p -> l a -> ModifiedLayout (ConfigurableBorder p) l a
+[ 59 of 256] Compiling XMonad.Layout.BoringWindows ( XMonad/Layout/BoringWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/BoringWindows.o )
+
+XMonad/Layout/BoringWindows.hs:91:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l a, Eq a)
+    • In the type signature for:
+           boringWindows :: (LayoutClass l a, Eq a) =>
+                            l a -> ModifiedLayout BoringWindows l a
+
+XMonad/Layout/BoringWindows.hs:95:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l a, Eq a)
+    • In the type signature for:
+           boringAuto :: (LayoutClass l a, Eq a) =>
+                         l a -> ModifiedLayout BoringWindows l a
+[ 60 of 256] Compiling XMonad.Layout.DraggingVisualizer ( XMonad/Layout/DraggingVisualizer.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/DraggingVisualizer.o )
+
+XMonad/Layout/DraggingVisualizer.hs:28:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l Window
+    • In the type signature for:
+           draggingVisualizer :: LayoutClass l Window =>
+                                 l Window -> ModifiedLayout DraggingVisualizer l Window
+[ 61 of 256] Compiling XMonad.Layout.AutoMaster ( XMonad/Layout/AutoMaster.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/AutoMaster.o )
+
+XMonad/Layout/AutoMaster.hs:117:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           autoMaster :: LayoutClass l a =>
+                         Int -> Float -> l a -> ModifiedLayout AutoMaster l a
+[ 62 of 256] Compiling XMonad.Layout.AvoidFloats ( XMonad/Layout/AvoidFloats.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/AvoidFloats.o )
+[ 63 of 256] Compiling XMonad.Layout.CenteredMaster ( XMonad/Layout/CenteredMaster.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/CenteredMaster.o )
+
+XMonad/Layout/CenteredMaster.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           centerMaster :: LayoutClass l a =>
+                           l a -> ModifiedLayout CenteredMaster l a
+
+XMonad/Layout/CenteredMaster.hs:67:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           topRightMaster :: LayoutClass l a =>
+                             l a -> ModifiedLayout TopRightMaster l a
+[ 64 of 256] Compiling XMonad.Layout.Renamed ( XMonad/Layout/Renamed.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Renamed.o )
+[ 65 of 256] Compiling XMonad.Layout.Named ( XMonad/Layout/Named.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Named.o )
+[ 66 of 256] Compiling XMonad.Layout.MessageControl ( XMonad/Layout/MessageControl.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MessageControl.o )
+
+XMonad/Layout/MessageControl.hs:117:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l w
+    • In the type signature for:
+           unEscape :: LayoutClass l w => l w -> ModifiedLayout UnEscape l w
+
+XMonad/Layout/MessageControl.hs:124:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Message m, LayoutClass l w)
+    • In the type signature for:
+           ignore :: (Message m, LayoutClass l w) => m -> l w -> Ignore m l w
+[ 67 of 256] Compiling XMonad.Layout.Hidden ( XMonad/Layout/Hidden.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Hidden.o )
+
+XMonad/Layout/Hidden.hs:87:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l Window
+    • In the type signature for:
+           hiddenWindows :: LayoutClass l Window =>
+                            l Window -> ModifiedLayout HiddenWindows l Window
+[ 68 of 256] Compiling XMonad.Layout.IM ( XMonad/Layout/IM.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/IM.o )
+
+XMonad/Layout/IM.hs:83:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           withIM :: LayoutClass l a =>
+                     Rational -> Property -> l a -> ModifiedLayout AddRoster l a
+[ 69 of 256] Compiling XMonad.Layout.LimitWindows ( XMonad/Layout/LimitWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LimitWindows.o )
+[ 70 of 256] Compiling XMonad.Layout.Master ( XMonad/Layout/Master.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Master.o )
+
+XMonad/Layout/Master.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           multimastered :: LayoutClass l a =>
+                            Int -> Rational -> Rational -> l a -> ModifiedLayout AddMaster l a
+
+XMonad/Layout/Master.hs:95:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           fixMastered :: LayoutClass l a =>
+                          Rational -> Rational -> l a -> ModifiedLayout FixMaster l a
+[ 71 of 256] Compiling XMonad.Layout.MultiToggle.Instances ( XMonad/Layout/MultiToggle/Instances.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MultiToggle/Instances.o )
+[ 72 of 256] Compiling XMonad.Layout.OnHost ( XMonad/Layout/OnHost.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/OnHost.o )
+
+XMonad/Layout/OnHost.hs:80:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 a, LayoutClass l2 a)
+    • In the type signature for:
+           onHosts :: (LayoutClass l1 a, LayoutClass l2 a) =>
+                      [String] -> l1 a -> l2 a -> OnHost l1 l2 a
+
+XMonad/Layout/OnHost.hs:99:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           modHosts :: LayoutClass l a =>
+                       [String]
+                       -> (l a -> ModifiedLayout lm l a)
+                       -> l a
+                       -> OnHost (ModifiedLayout lm l) l a
+
+XMonad/Layout/OnHost.hs:116:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the instance declaration for ‘LayoutClass (OnHost l1 l2) a’
+[ 73 of 256] Compiling XMonad.Layout.SortedLayout ( XMonad/Layout/SortedLayout.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/SortedLayout.o )
+
+XMonad/Layout/SortedLayout.hs:59:44: warning: [-Wunused-top-binds]
+    Defined but not used: ‘wdProp’
+[ 74 of 256] Compiling XMonad.Layout.TrackFloating ( XMonad/Layout/TrackFloating.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/TrackFloating.o )
+[ 75 of 256] Compiling XMonad.Layout.Minimize ( XMonad/Layout/Minimize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Minimize.o )
+
+XMonad/Layout/Minimize.hs:71:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l Window
+    • In the type signature for:
+           minimize :: LayoutClass l Window =>
+                       l Window -> ModifiedLayout Minimize l Window
+[ 76 of 256] Compiling XMonad.Hooks.Minimize ( XMonad/Hooks/Minimize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/Minimize.o )
+[ 77 of 256] Compiling XMonad.Hooks.RestoreMinimized ( XMonad/Hooks/RestoreMinimized.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/RestoreMinimized.o )
+[ 78 of 256] Compiling XMonad.Layout.Maximize ( XMonad/Layout/Maximize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Maximize.o )
+
+XMonad/Layout/Maximize.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l Window
+    • In the type signature for:
+           maximize :: LayoutClass l Window =>
+                       l Window -> ModifiedLayout Maximize l Window
+
+XMonad/Layout/Maximize.hs:67:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l Window
+    • In the type signature for:
+           maximizeWithPadding :: LayoutClass l Window =>
+                                  Dimension -> l Window -> ModifiedLayout Maximize l Window
+[ 79 of 256] Compiling XMonad.Actions.Warp ( XMonad/Actions/Warp.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Warp.o )
+[ 80 of 256] Compiling XMonad.Actions.UpdateFocus ( XMonad/Actions/UpdateFocus.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/UpdateFocus.o )
+[ 81 of 256] Compiling XMonad.Util.TreeZipper ( XMonad/Util/TreeZipper.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/TreeZipper.o )
+[ 82 of 256] Compiling XMonad.Actions.Submap ( XMonad/Actions/Submap.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Submap.o )
+[ 83 of 256] Compiling XMonad.Util.NamedActions ( XMonad/Util/NamedActions.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/NamedActions.o )
+[ 84 of 256] Compiling XMonad.Hooks.ManageHelpers ( XMonad/Hooks/ManageHelpers.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ManageHelpers.o )
+[ 85 of 256] Compiling XMonad.Layout.Fullscreen ( XMonad/Layout/Fullscreen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Fullscreen.o )
+
+XMonad/Layout/Fullscreen.hs:161:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           fullscreenFullRect :: LayoutClass l a =>
+                                 W.RationalRect -> l a -> ModifiedLayout FullscreenFull l a
+
+XMonad/Layout/Fullscreen.hs:173:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           fullscreenFocusRect :: LayoutClass l a =>
+                                  W.RationalRect -> l a -> ModifiedLayout FullscreenFocus l a
+
+XMonad/Layout/Fullscreen.hs:185:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           fullscreenFloatRect :: LayoutClass l a =>
+                                  W.RationalRect -> l a -> ModifiedLayout FullscreenFloat l a
+[ 86 of 256] Compiling XMonad.Layout.Monitor ( XMonad/Layout/Monitor.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Monitor.o )
+[ 87 of 256] Compiling XMonad.Actions.WithAll ( XMonad/Actions/WithAll.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WithAll.o )
+[ 88 of 256] Compiling XMonad.Actions.SinkAll ( XMonad/Actions/SinkAll.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/SinkAll.o )
+[ 89 of 256] Compiling XMonad.Util.Timer ( XMonad/Util/Timer.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Timer.o )
+
+XMonad/Util/Timer.hs:23:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 90 of 256] Compiling XMonad.Layout.Stoppable ( XMonad/Layout/Stoppable.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Stoppable.o )
+[ 91 of 256] Compiling XMonad.Actions.RandomBackground ( XMonad/Actions/RandomBackground.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/RandomBackground.o )
+[ 92 of 256] Compiling XMonad.Actions.Promote ( XMonad/Actions/Promote.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Promote.o )
+[ 93 of 256] Compiling XMonad.Actions.PhysicalScreens ( XMonad/Actions/PhysicalScreens.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/PhysicalScreens.o )
+[ 94 of 256] Compiling XMonad.Actions.PerWorkspaceKeys ( XMonad/Actions/PerWorkspaceKeys.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/PerWorkspaceKeys.o )
+[ 95 of 256] Compiling XMonad.Actions.NoBorders ( XMonad/Actions/NoBorders.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/NoBorders.o )
+[ 96 of 256] Compiling XMonad.Util.EZConfig ( XMonad/Util/EZConfig.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/EZConfig.o )
+[ 97 of 256] Compiling XMonad.Config.Prime ( XMonad/Config/Prime.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Prime.o )
+
+XMonad/Config/Prime.hs:549:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l Window,
+                              LayoutClass r Window)
+    • In the type signature for:
+           addLayout :: (LayoutClass l Window, LayoutClass r Window) =>
+                        r Window -> Prime l (Choose l r)
+
+XMonad/Config/Prime.hs:559:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass r Window
+    • In the type signature for:
+           resetLayout :: LayoutClass r Window => r Window -> Prime l r
+
+XMonad/Config/Prime.hs:568:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass r Window
+    • In the type signature for:
+           modifyLayout :: LayoutClass r Window =>
+                           (l Window -> r Window) -> Prime l r
+[ 98 of 256] Compiling XMonad.Actions.MessageFeedback ( XMonad/Actions/MessageFeedback.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/MessageFeedback.o )
+[ 99 of 256] Compiling XMonad.Layout.Groups.Helpers ( XMonad/Layout/Groups/Helpers.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Groups/Helpers.o )
+[100 of 256] Compiling XMonad.Actions.OnScreen ( XMonad/Actions/OnScreen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/OnScreen.o )
+[101 of 256] Compiling XMonad.Util.Run  ( XMonad/Util/Run.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Run.o )
+[102 of 256] Compiling XMonad.Actions.Plane ( XMonad/Actions/Plane.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Plane.o )
+[103 of 256] Compiling XMonad.Util.XSelection ( XMonad/Util/XSelection.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/XSelection.o )
+[104 of 256] Compiling XMonad.Util.Paste ( XMonad/Util/Paste.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Paste.o )
+[105 of 256] Compiling XMonad.Actions.SimpleDate ( XMonad/Actions/SimpleDate.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/SimpleDate.o )
+[106 of 256] Compiling XMonad.Util.Dzen ( XMonad/Util/Dzen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Dzen.o )
+[107 of 256] Compiling XMonad.Util.NamedWindows ( XMonad/Util/NamedWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/NamedWindows.o )
+[108 of 256] Compiling XMonad.Util.Font ( XMonad/Util/Font.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Font.o )
+
+XMonad/Util/Font.hs:37:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+XMonad/Util/Font.hs:59:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           stringToPixel :: (Functor m, MonadIO m) =>
+                            Display -> String -> m Pixel
+
+XMonad/Util/Font.hs:151:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           stringPosition :: (Functor m, MonadIO m) =>
+                             Display
+                             -> XMonadFont
+                             -> Rectangle
+                             -> Align
+                             -> String
+                             -> m (Position, Position)
+
+XMonad/Util/Font.hs:163:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           printStringXMF :: (Functor m, MonadIO m) =>
+                             Display
+                             -> Drawable
+                             -> XMonadFont
+                             -> GC
+                             -> String
+                             -> String
+                             -> Position
+                             -> Position
+                             -> String
+                             -> m ()
+[109 of 256] Compiling XMonad.Util.Image ( XMonad/Util/Image.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Image.o )
+
+XMonad/Util/Image.hs:78:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           drawIcon :: (Functor m, MonadIO m) =>
+                       Display
+                       -> Drawable
+                       -> GC
+                       -> String
+                       -> String
+                       -> Position
+                       -> Position
+                       -> [[Bool]]
+                       -> m ()
+[110 of 256] Compiling XMonad.Layout.Spacing ( XMonad/Layout/Spacing.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Spacing.o )
+[111 of 256] Compiling XMonad.Actions.FocusNth ( XMonad/Actions/FocusNth.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/FocusNth.o )
+[112 of 256] Compiling XMonad.Actions.WorkspaceCursors ( XMonad/Actions/WorkspaceCursors.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WorkspaceCursors.o )
+[113 of 256] Compiling XMonad.Actions.FloatKeys ( XMonad/Actions/FloatKeys.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/FloatKeys.o )
+[114 of 256] Compiling XMonad.Util.XUtils ( XMonad/Util/XUtils.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/XUtils.o )
+[115 of 256] Compiling XMonad.Layout.WindowArranger ( XMonad/Layout/WindowArranger.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/WindowArranger.o )
+[116 of 256] Compiling XMonad.Actions.UpdatePointer ( XMonad/Actions/UpdatePointer.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/UpdatePointer.o )
+[117 of 256] Compiling XMonad.Layout.MagicFocus ( XMonad/Layout/MagicFocus.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MagicFocus.o )
+[118 of 256] Compiling XMonad.Layout.Magnifier ( XMonad/Layout/Magnifier.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Magnifier.o )
+[119 of 256] Compiling XMonad.Layout.MouseResizableTile ( XMonad/Layout/MouseResizableTile.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/MouseResizableTile.o )
+[120 of 256] Compiling XMonad.Hooks.WorkspaceByPos ( XMonad/Hooks/WorkspaceByPos.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/WorkspaceByPos.o )
+
+XMonad/Hooks/WorkspaceByPos.hs:29:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Error’ is deprecated:
+      Use Control.Monad.Except instead
+
+XMonad/Hooks/WorkspaceByPos.hs:47:42: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[121 of 256] Compiling XMonad.Layout.ShowWName ( XMonad/Layout/ShowWName.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ShowWName.o )
+[122 of 256] Compiling XMonad.Hooks.Place ( XMonad/Hooks/Place.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/Place.o )
+[123 of 256] Compiling XMonad.Layout.DragPane ( XMonad/Layout/DragPane.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/DragPane.o )
+[124 of 256] Compiling XMonad.Layout.Reflect ( XMonad/Layout/Reflect.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Reflect.o )
+[125 of 256] Compiling XMonad.Layout.Drawer ( XMonad/Layout/Drawer.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Drawer.o )
+[126 of 256] Compiling XMonad.Layout.SimplestFloat ( XMonad/Layout/SimplestFloat.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/SimplestFloat.o )
+
+XMonad/Layout/SimplestFloat.hs:45:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Eq a
+    • In the type signature for:
+           simplestFloat :: Eq a =>
+                            ModifiedLayout WindowArranger SimplestFloat a
+[127 of 256] Compiling XMonad.Actions.FlexibleResize ( XMonad/Actions/FlexibleResize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/FlexibleResize.o )
+[128 of 256] Compiling XMonad.Actions.FlexibleManipulate ( XMonad/Actions/FlexibleManipulate.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/FlexibleManipulate.o )
+[129 of 256] Compiling XMonad.Actions.FindEmptyWorkspace ( XMonad/Actions/FindEmptyWorkspace.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/FindEmptyWorkspace.o )
+[130 of 256] Compiling XMonad.Util.ExtensibleState ( XMonad/Util/ExtensibleState.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/ExtensibleState.o )
+[131 of 256] Compiling XMonad.Actions.GroupNavigation ( XMonad/Actions/GroupNavigation.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/GroupNavigation.o )
+[132 of 256] Compiling XMonad.Actions.KeyRemap ( XMonad/Actions/KeyRemap.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/KeyRemap.o )
+[133 of 256] Compiling XMonad.Actions.ShowText ( XMonad/Actions/ShowText.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/ShowText.o )
+[134 of 256] Compiling XMonad.Hooks.UrgencyHook ( XMonad/Hooks/UrgencyHook.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/UrgencyHook.o )
+
+XMonad/Hooks/UrgencyHook.hs:216:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l Window
+    • In the type signature for:
+           withUrgencyHookC :: (LayoutClass l Window, UrgencyHook h) =>
+                               h -> UrgencyConfig -> XConfig l -> XConfig l
+[135 of 256] Compiling XMonad.Layout.Decoration ( XMonad/Layout/Decoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Decoration.o )
+
+XMonad/Layout/Decoration.hs:62:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (DecorationStyle ds a, Shrinker s)
+    • In the type signature for:
+           decoration :: (DecorationStyle ds a, Shrinker s) =>
+                         s -> Theme -> ds a -> l a -> ModifiedLayout (Decoration ds s) l a
+[136 of 256] Compiling XMonad.Actions.MouseResize ( XMonad/Actions/MouseResize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/MouseResize.o )
+[137 of 256] Compiling XMonad.Util.Themes ( XMonad/Util/Themes.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Themes.o )
+[138 of 256] Compiling XMonad.Layout.BorderResize ( XMonad/Layout/BorderResize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/BorderResize.o )
+[139 of 256] Compiling XMonad.Layout.DwmStyle ( XMonad/Layout/DwmStyle.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/DwmStyle.o )
+[140 of 256] Compiling XMonad.Layout.SimpleDecoration ( XMonad/Layout/SimpleDecoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/SimpleDecoration.o )
+[141 of 256] Compiling XMonad.Layout.SimpleFloat ( XMonad/Layout/SimpleFloat.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/SimpleFloat.o )
+[142 of 256] Compiling XMonad.Layout.ZoomRow ( XMonad/Layout/ZoomRow.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ZoomRow.o )
+
+XMonad/Layout/ZoomRow.hs:79:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Eq a, Show a, Read a)
+    • In the type signature for:
+           zoomRow :: (Eq a, Show a, Read a) => ZoomRow ClassEQ a
+
+XMonad/Layout/ZoomRow.hs:95:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (EQF f a,
+                              Show (f a),
+                              Read (f a),
+                              Show a,
+                              Read a)
+    • In the type signature for:
+           zoomRowWith :: (EQF f a, Show (f a), Read (f a), Show a, Read a) =>
+                          f a -> ZoomRow f a
+[143 of 256] Compiling XMonad.Layout.NoFrillsDecoration ( XMonad/Layout/NoFrillsDecoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/NoFrillsDecoration.o )
+[144 of 256] Compiling XMonad.Layout.ResizeScreen ( XMonad/Layout/ResizeScreen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ResizeScreen.o )
+[145 of 256] Compiling XMonad.Actions.Workscreen ( XMonad/Actions/Workscreen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Workscreen.o )
+[146 of 256] Compiling XMonad.Hooks.CurrentWorkspaceOnTop ( XMonad/Hooks/CurrentWorkspaceOnTop.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/CurrentWorkspaceOnTop.o )
+[147 of 256] Compiling XMonad.Util.SpawnOnce ( XMonad/Util/SpawnOnce.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/SpawnOnce.o )
+[148 of 256] Compiling XMonad.Hooks.DynamicHooks ( XMonad/Hooks/DynamicHooks.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DynamicHooks.o )
+[149 of 256] Compiling XMonad.Hooks.ToggleHook ( XMonad/Hooks/ToggleHook.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ToggleHook.o )
+[150 of 256] Compiling XMonad.Hooks.FloatNext ( XMonad/Hooks/FloatNext.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/FloatNext.o )
+[151 of 256] Compiling XMonad.Hooks.ManageDebug ( XMonad/Hooks/ManageDebug.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ManageDebug.o )
+[152 of 256] Compiling XMonad.Util.PositionStore ( XMonad/Util/PositionStore.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/PositionStore.o )
+[153 of 256] Compiling XMonad.Layout.PositionStoreFloat ( XMonad/Layout/PositionStoreFloat.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/PositionStoreFloat.o )
+[154 of 256] Compiling XMonad.Hooks.ScreenCorners ( XMonad/Hooks/ScreenCorners.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ScreenCorners.o )
+[155 of 256] Compiling XMonad.Hooks.WallpaperSetter ( XMonad/Hooks/WallpaperSetter.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/WallpaperSetter.o )
+
+XMonad/Hooks/WallpaperSetter.hs:42:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+XMonad/Hooks/WallpaperSetter.hs:44:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[156 of 256] Compiling XMonad.Util.SpawnNamedPipe ( XMonad/Util/SpawnNamedPipe.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/SpawnNamedPipe.o )
+[157 of 256] Compiling XMonad.Actions.DwmPromote ( XMonad/Actions/DwmPromote.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/DwmPromote.o )
+[158 of 256] Compiling XMonad.Actions.DeManage ( XMonad/Actions/DeManage.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/DeManage.o )
+[159 of 256] Compiling XMonad.Util.WorkspaceCompare ( XMonad/Util/WorkspaceCompare.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/WorkspaceCompare.o )
+
+XMonad/Util/WorkspaceCompare.hs:28:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[160 of 256] Compiling XMonad.Hooks.EwmhDesktops ( XMonad/Hooks/EwmhDesktops.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/EwmhDesktops.o )
+[161 of 256] Compiling XMonad.Util.Types ( XMonad/Util/Types.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Types.o )
+[162 of 256] Compiling XMonad.Prompt    ( XMonad/Prompt.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt.o )
+
+XMonad/Prompt.hs:1200:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           initMatches :: (Functor m, MonadIO m) => m HistoryMatches
+[163 of 256] Compiling XMonad.Prompt.Workspace ( XMonad/Prompt/Workspace.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Workspace.o )
+[164 of 256] Compiling XMonad.Actions.DynamicWorkspaces ( XMonad/Actions/DynamicWorkspaces.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/DynamicWorkspaces.o )
+
+XMonad/Actions/DynamicWorkspaces.hs:130:1: warning: [-Wtabs]
+    Tab character found here, and in 17 further locations.
+    Please use spaces instead.
+
+XMonad/Actions/DynamicWorkspaces.hs:135:28: warning: [-Wname-shadowing]
+    This binding for ‘new’ shadows the existing binding
+      imported from ‘XMonad.StackSet’ at XMonad/Actions/DynamicWorkspaces.hs:39:1-54
+[165 of 256] Compiling XMonad.Actions.DynamicWorkspaceGroups ( XMonad/Actions/DynamicWorkspaceGroups.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/DynamicWorkspaceGroups.o )
+[166 of 256] Compiling XMonad.Prompt.Directory ( XMonad/Prompt/Directory.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Directory.o )
+[167 of 256] Compiling XMonad.Actions.DynamicProjects ( XMonad/Actions/DynamicProjects.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/DynamicProjects.o )
+[168 of 256] Compiling XMonad.Actions.Launcher ( XMonad/Actions/Launcher.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Launcher.o )
+[169 of 256] Compiling XMonad.Prompt.Shell ( XMonad/Prompt/Shell.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Shell.o )
+[170 of 256] Compiling XMonad.Actions.Search ( XMonad/Actions/Search.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Search.o )
+[171 of 256] Compiling XMonad.Actions.SpawnOn ( XMonad/Actions/SpawnOn.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/SpawnOn.o )
+[172 of 256] Compiling XMonad.Actions.TagWindows ( XMonad/Actions/TagWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/TagWindows.o )
+
+XMonad/Actions/TagWindows.hs:119:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Ord i
+    • In the type signature for:
+           wsToList :: Ord i => StackSet i l a s sd -> [a]
+[173 of 256] Compiling XMonad.Prompt.Ssh ( XMonad/Prompt/Ssh.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Ssh.o )
+[174 of 256] Compiling XMonad.Prompt.Theme ( XMonad/Prompt/Theme.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Theme.o )
+[175 of 256] Compiling XMonad.Layout.WorkspaceDir ( XMonad/Layout/WorkspaceDir.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/WorkspaceDir.o )
+
+XMonad/Layout/WorkspaceDir.hs:79:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           workspaceDir :: LayoutClass l a =>
+                           String -> l a -> ModifiedLayout WorkspaceDir l a
+[176 of 256] Compiling XMonad.Layout.TabBarDecoration ( XMonad/Layout/TabBarDecoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/TabBarDecoration.o )
+
+XMonad/Layout/TabBarDecoration.hs:75:21: warning: [-Wincomplete-patterns]
+    Pattern match(es) are non-exhaustive
+    In a case alternative: Patterns not matched: (CenteredAt _ _)
+[177 of 256] Compiling XMonad.Layout.DecorationMadness ( XMonad/Layout/DecorationMadness.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/DecorationMadness.o )
+
+XMonad/Layout/DecorationMadness.hs:542:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatSimpleSimple :: (Show a, Eq a) =>
+                                ModifiedLayout
+                                  (Decoration SimpleDecoration DefaultShrinker)
+                                  (ModifiedLayout
+                                     MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                                  a
+
+XMonad/Layout/DecorationMadness.hs:546:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatSimple :: (Show a, Eq a, Shrinker s) =>
+                          s
+                          -> Theme
+                          -> ModifiedLayout
+                               (Decoration SimpleDecoration s)
+                               (ModifiedLayout
+                                  MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                               a
+
+XMonad/Layout/DecorationMadness.hs:556:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatSimpleDefault :: (Show a, Eq a) =>
+                                 ModifiedLayout
+                                   (Decoration DefaultDecoration DefaultShrinker)
+                                   (ModifiedLayout
+                                      MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                                   a
+
+XMonad/Layout/DecorationMadness.hs:562:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatDefault :: (Show a, Eq a, Shrinker s) =>
+                           s
+                           -> Theme
+                           -> ModifiedLayout
+                                (Decoration DefaultDecoration s)
+                                (ModifiedLayout
+                                   MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                                a
+
+XMonad/Layout/DecorationMadness.hs:573:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatSimpleDwmStyle :: (Show a, Eq a) =>
+                                  ModifiedLayout
+                                    (Decoration DwmStyle DefaultShrinker)
+                                    (ModifiedLayout
+                                       MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                                    a
+
+XMonad/Layout/DecorationMadness.hs:579:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatDwmStyle :: (Show a, Eq a, Shrinker s) =>
+                            s
+                            -> Theme
+                            -> ModifiedLayout
+                                 (Decoration DwmStyle s)
+                                 (ModifiedLayout
+                                    MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                                 a
+
+XMonad/Layout/DecorationMadness.hs:590:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatSimpleTabbed :: (Show a, Eq a) =>
+                                ModifiedLayout
+                                  (Decoration TabBarDecoration DefaultShrinker)
+                                  (ModifiedLayout
+                                     MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                                  a
+
+XMonad/Layout/DecorationMadness.hs:596:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show a
+    • In the type signature for:
+           floatTabbed :: (Show a, Eq a, Shrinker s) =>
+                          s
+                          -> Theme
+                          -> ModifiedLayout
+                               (Decoration TabBarDecoration s)
+                               (ModifiedLayout
+                                  MouseResize (ModifiedLayout WindowArranger SimpleFloat))
+                               a
+[178 of 256] Compiling XMonad.Prompt.AppendFile ( XMonad/Prompt/AppendFile.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/AppendFile.o )
+[179 of 256] Compiling XMonad.Prompt.AppLauncher ( XMonad/Prompt/AppLauncher.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/AppLauncher.o )
+[180 of 256] Compiling XMonad.Prompt.ConfirmPrompt ( XMonad/Prompt/ConfirmPrompt.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/ConfirmPrompt.o )
+[181 of 256] Compiling XMonad.Prompt.DirExec ( XMonad/Prompt/DirExec.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/DirExec.o )
+[182 of 256] Compiling XMonad.Prompt.Input ( XMonad/Prompt/Input.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Input.o )
+[183 of 256] Compiling XMonad.Prompt.Email ( XMonad/Prompt/Email.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Email.o )
+[184 of 256] Compiling XMonad.Prompt.Man ( XMonad/Prompt/Man.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Man.o )
+[185 of 256] Compiling XMonad.Prompt.Pass ( XMonad/Prompt/Pass.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Pass.o )
+[186 of 256] Compiling XMonad.Prompt.Unicode ( XMonad/Prompt/Unicode.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Unicode.o )
+
+XMonad/Prompt/Unicode.hs:27:1: warning: [-Wunused-imports]
+    The import of ‘System.Environment’ is redundant
+      except perhaps to import instances from ‘System.Environment’
+    To import instances alone, use: import System.Environment()
+
+XMonad/Prompt/Unicode.hs:79:13: warning: [-Wunused-matches]
+    Defined but not used: ‘c’
+
+XMonad/Prompt/Unicode.hs:83:15: warning: [-Wname-shadowing]
+    This binding for ‘config’ shadows the existing binding
+      imported from ‘XMonad’ at XMonad/Prompt/Unicode.hs:35:1-13
+      (and originally defined in ‘XMonad.Core’)
+[187 of 256] Compiling XMonad.Hooks.ManageDocks ( XMonad/Hooks/ManageDocks.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ManageDocks.o )
+
+XMonad/Hooks/ManageDocks.hs:159:5: warning: [-Wname-shadowing]
+    This binding for ‘docks’ shadows the existing binding
+      defined at XMonad/Hooks/ManageDocks.hs:90:1
+
+XMonad/Hooks/ManageDocks.hs:204:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           avoidStrutsOn :: LayoutClass l a =>
+                            [Direction2D] -> l a -> ModifiedLayout AvoidStruts l a
+[188 of 256] Compiling XMonad.Hooks.DynamicLog ( XMonad/Hooks/DynamicLog.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DynamicLog.o )
+[189 of 256] Compiling XMonad.Layout.IndependentScreens ( XMonad/Layout/IndependentScreens.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/IndependentScreens.o )
+[190 of 256] Compiling XMonad.Actions.LinkWorkspaces ( XMonad/Actions/LinkWorkspaces.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/LinkWorkspaces.o )
+[191 of 256] Compiling XMonad.Actions.TopicSpace ( XMonad/Actions/TopicSpace.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/TopicSpace.o )
+[192 of 256] Compiling XMonad.Hooks.DynamicBars ( XMonad/Hooks/DynamicBars.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/DynamicBars.o )
+[193 of 256] Compiling XMonad.Util.Loggers ( XMonad/Util/Loggers.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Loggers.o )
+[194 of 256] Compiling XMonad.Util.NamedScratchpad ( XMonad/Util/NamedScratchpad.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/NamedScratchpad.o )
+[195 of 256] Compiling XMonad.Util.Loggers.NamedScratchpad ( XMonad/Util/Loggers/NamedScratchpad.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Loggers/NamedScratchpad.o )
+
+XMonad/Util/Loggers/NamedScratchpad.hs:96:21: warning: [-Wtype-defaults]
+    • Defaulting the following constraints to type ‘Integer’
+        (Enum a0)
+          arising from the arithmetic sequence ‘0 .. ’
+          at XMonad/Util/Loggers/NamedScratchpad.hs:96:21-25
+        (Num a0)
+          arising from the literal ‘0’
+          at XMonad/Util/Loggers/NamedScratchpad.hs:96:22
+    • In the first argument of ‘zip3’, namely ‘[0 .. ]’
+      In the first argument of ‘forM’, namely ‘(zip3 [0 .. ] ws ns)’
+      In the expression: forM (zip3 [0 .. ] ws ns)
+[196 of 256] Compiling XMonad.Util.Scratchpad ( XMonad/Util/Scratchpad.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Scratchpad.o )
+[197 of 256] Compiling XMonad.Hooks.PositionStoreHooks ( XMonad/Hooks/PositionStoreHooks.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/PositionStoreHooks.o )
+[198 of 256] Compiling XMonad.Config.Desktop ( XMonad/Config/Desktop.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Desktop.o )
+[199 of 256] Compiling XMonad.Config.Gnome ( XMonad/Config/Gnome.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Gnome.o )
+[200 of 256] Compiling XMonad.Config.Kde ( XMonad/Config/Kde.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Kde.o )
+[201 of 256] Compiling XMonad.Config.Mate ( XMonad/Config/Mate.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Mate.o )
+[202 of 256] Compiling XMonad.Config.Xfce ( XMonad/Config/Xfce.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Xfce.o )
+[203 of 256] Compiling XMonad.Config.Dmwit ( XMonad/Config/Dmwit.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Dmwit.o )
+
+XMonad/Config/Dmwit.hs:7:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[204 of 256] Compiling XMonad.Actions.MouseGestures ( XMonad/Actions/MouseGestures.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/MouseGestures.o )
+[205 of 256] Compiling XMonad.Actions.Navigation2D ( XMonad/Actions/Navigation2D.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Navigation2D.o )
+[206 of 256] Compiling XMonad.Actions.WindowNavigation ( XMonad/Actions/WindowNavigation.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WindowNavigation.o )
+[207 of 256] Compiling XMonad.Layout.Tabbed ( XMonad/Layout/Tabbed.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Tabbed.o )
+
+XMonad/Layout/Tabbed.hs:187:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           createTabs :: (Eq a, LayoutClass l a, Shrinker s) =>
+                         TabbarShown
+                         -> Direction2D
+                         -> s
+                         -> Theme
+                         -> l a
+                         -> ModifiedLayout (Decoration TabbedDecoration s) l a
+[208 of 256] Compiling XMonad.Layout.WindowNavigation ( XMonad/Layout/WindowNavigation.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/WindowNavigation.o )
+
+XMonad/Layout/WindowNavigation.hs:104:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           windowNavigation :: LayoutClass l a =>
+                               l a -> ModifiedLayout WindowNavigation l a
+
+XMonad/Layout/WindowNavigation.hs:107:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           configurableNavigation :: LayoutClass l a =>
+                                     WNConfig -> l a -> ModifiedLayout WindowNavigation l a
+[209 of 256] Compiling XMonad.Layout.Combo ( XMonad/Layout/Combo.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Combo.o )
+
+XMonad/Layout/Combo.hs:73:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Read a,
+                              Eq a,
+                              LayoutClass super (),
+                              LayoutClass l1 a,
+                              LayoutClass l2 a)
+    • In the type signature for:
+           combineTwo :: (Read a, Eq a, LayoutClass super (),
+                          LayoutClass l1 a, LayoutClass l2 a) =>
+                         super () -> l1 a -> l2 a -> CombineTwo (super ()) l1 l2 a
+
+XMonad/Layout/Combo.hs:77:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Read a
+    • In the instance declaration for
+        ‘LayoutClass (CombineTwo (l ()) l1 l2) a’
+[210 of 256] Compiling XMonad.Layout.ComboP ( XMonad/Layout/ComboP.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ComboP.o )
+
+XMonad/Layout/ComboP.hs:77:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass super (),
+                              LayoutClass l1 Window,
+                              LayoutClass l2 Window)
+    • In the type signature for:
+           combineTwoP :: (LayoutClass super (), LayoutClass l1 Window,
+                           LayoutClass l2 Window) =>
+                          super ()
+                          -> l1 Window
+                          -> l2 Window
+                          -> Property
+                          -> CombineTwoP (super ()) l1 l2 Window
+
+XMonad/Layout/ComboP.hs:130:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass s a,
+                              LayoutClass l1 Window,
+                              LayoutClass l2 Window)
+    • In the type signature for:
+           swap :: (LayoutClass s a, LayoutClass l1 Window,
+                    LayoutClass l2 Window) =>
+                   CombineTwoP (s a) l1 l2 Window
+                   -> X (Maybe (CombineTwoP (s a) l1 l2 Window))
+[211 of 256] Compiling XMonad.Layout.BinarySpacePartition ( XMonad/Layout/BinarySpacePartition.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/BinarySpacePartition.o )
+
+XMonad/Layout/BinarySpacePartition.hs:47:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[212 of 256] Compiling XMonad.Layout.Dwindle ( XMonad/Layout/Dwindle.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Dwindle.o )
+[213 of 256] Compiling XMonad.Layout.Gaps ( XMonad/Layout/Gaps.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Gaps.o )
+[214 of 256] Compiling XMonad.Layout.LayoutHints ( XMonad/Layout/LayoutHints.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LayoutHints.o )
+
+XMonad/Layout/LayoutHints.hs:80:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           layoutHints :: LayoutClass l a =>
+                          l a -> ModifiedLayout LayoutHints l a
+
+XMonad/Layout/LayoutHints.hs:88:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           layoutHintsWithPlacement :: LayoutClass l a =>
+                                       (Double, Double) -> l a -> ModifiedLayout LayoutHints l a
+
+XMonad/Layout/LayoutHints.hs:100:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: LayoutClass l a
+    • In the type signature for:
+           layoutHintsToCenter :: LayoutClass l a =>
+                                  l a -> ModifiedLayout LayoutHintsToCenter l a
+[215 of 256] Compiling XMonad.Layout.SubLayouts ( XMonad/Layout/SubLayouts.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/SubLayouts.o )
+[216 of 256] Compiling XMonad.Hooks.WorkspaceHistory ( XMonad/Hooks/WorkspaceHistory.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/WorkspaceHistory.o )
+[217 of 256] Compiling XMonad.Actions.TreeSelect ( XMonad/Actions/TreeSelect.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/TreeSelect.o )
+
+XMonad/Actions/TreeSelect.hs:63:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+XMonad/Actions/TreeSelect.hs:455:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           forMForest :: (Functor m, Applicative m, Monad m) =>
+                         [Tree a] -> (a -> m b) -> m [Tree b]
+
+XMonad/Actions/TreeSelect.hs:458:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Functor m
+    • In the type signature for:
+           mapMTree :: (Functor m, Applicative m, Monad m) =>
+                       (a -> m b) -> Tree a -> m (Tree b)
+[218 of 256] Compiling XMonad.Actions.CycleWS ( XMonad/Actions/CycleWS.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/CycleWS.o )
+[219 of 256] Compiling XMonad.Actions.DynamicWorkspaceOrder ( XMonad/Actions/DynamicWorkspaceOrder.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/DynamicWorkspaceOrder.o )
+[220 of 256] Compiling XMonad.Actions.SwapWorkspaces ( XMonad/Actions/SwapWorkspaces.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/SwapWorkspaces.o )
+[221 of 256] Compiling XMonad.Actions.WorkspaceNames ( XMonad/Actions/WorkspaceNames.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WorkspaceNames.o )
+
+XMonad/Actions/WorkspaceNames.hs:104:5: warning: [-Wname-shadowing]
+    This binding for ‘lookup’ shadows the existing binding
+      imported from ‘Prelude’ at XMonad/Actions/WorkspaceNames.hs:20:8-36
+      (and originally defined in ‘GHC.List’)
+[222 of 256] Compiling XMonad.Actions.RotSlaves ( XMonad/Actions/RotSlaves.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/RotSlaves.o )
+[223 of 256] Compiling XMonad.Actions.CycleWindows ( XMonad/Actions/CycleWindows.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/CycleWindows.o )
+
+XMonad/Actions/CycleWindows.hs:161:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Show a, Read a)
+    • In the type signature for:
+           shiftToFocus' :: (Eq a, Show a, Read a) =>
+                            a -> W.Stack a -> W.Stack a
+[224 of 256] Compiling XMonad.Actions.CycleRecentWS ( XMonad/Actions/CycleRecentWS.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/CycleRecentWS.o )
+[225 of 256] Compiling XMonad.Actions.WindowGo ( XMonad/Actions/WindowGo.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WindowGo.o )
+[226 of 256] Compiling XMonad.Prompt.RunOrRaise ( XMonad/Prompt/RunOrRaise.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/RunOrRaise.o )
+[227 of 256] Compiling XMonad.Actions.CopyWindow ( XMonad/Actions/CopyWindow.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/CopyWindow.o )
+[228 of 256] Compiling XMonad.Config.Sjanssen ( XMonad/Config/Sjanssen.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Sjanssen.o )
+[229 of 256] Compiling XMonad.Actions.ConstrainedResize ( XMonad/Actions/ConstrainedResize.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/ConstrainedResize.o )
+[230 of 256] Compiling XMonad.Util.Dmenu ( XMonad/Util/Dmenu.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Util/Dmenu.o )
+[231 of 256] Compiling XMonad.Actions.WindowBringer ( XMonad/Actions/WindowBringer.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WindowBringer.o )
+[232 of 256] Compiling XMonad.Actions.GridSelect ( XMonad/Actions/GridSelect.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/GridSelect.o )
+
+XMonad/Actions/GridSelect.hs:86:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[233 of 256] Compiling XMonad.Actions.WindowMenu ( XMonad/Actions/WindowMenu.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/WindowMenu.o )
+[234 of 256] Compiling XMonad.Layout.DecorationAddons ( XMonad/Layout/DecorationAddons.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/DecorationAddons.o )
+[235 of 256] Compiling XMonad.Layout.ButtonDecoration ( XMonad/Layout/ButtonDecoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ButtonDecoration.o )
+[236 of 256] Compiling XMonad.Layout.ImageButtonDecoration ( XMonad/Layout/ImageButtonDecoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/ImageButtonDecoration.o )
+[237 of 256] Compiling XMonad.Layout.WindowSwitcherDecoration ( XMonad/Layout/WindowSwitcherDecoration.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/WindowSwitcherDecoration.o )
+[238 of 256] Compiling XMonad.Prompt.Window ( XMonad/Prompt/Window.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Window.o )
+[239 of 256] Compiling XMonad.Actions.Commands ( XMonad/Actions/Commands.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/Commands.o )
+[240 of 256] Compiling XMonad.Hooks.ServerMode ( XMonad/Hooks/ServerMode.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Hooks/ServerMode.o )
+[241 of 256] Compiling XMonad.Prompt.XMonad ( XMonad/Prompt/XMonad.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/XMonad.o )
+[242 of 256] Compiling XMonad.Layout.LayoutCombinators ( XMonad/Layout/LayoutCombinators.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/LayoutCombinators.o )
+
+XMonad/Layout/LayoutCombinators.hs:222:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (LayoutClass l1 a, LayoutClass l2 a)
+    • In the type signature for:
+           (|||) :: (LayoutClass l1 a, LayoutClass l2 a) =>
+                    l1 a -> l2 a -> NewSelect l1 l2 a
+[243 of 256] Compiling XMonad.Actions.CycleSelectedLayouts ( XMonad/Actions/CycleSelectedLayouts.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/CycleSelectedLayouts.o )
+[244 of 256] Compiling XMonad.Config.Arossato ( XMonad/Config/Arossato.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Arossato.o )
+[245 of 256] Compiling XMonad.Prompt.Layout ( XMonad/Prompt/Layout.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Prompt/Layout.o )
+[246 of 256] Compiling XMonad.Config.Droundy ( XMonad/Config/Droundy.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Droundy.o )
+[247 of 256] Compiling XMonad.Layout.Groups.Examples ( XMonad/Layout/Groups/Examples.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Groups/Examples.o )
+
+XMonad/Layout/Groups/Examples.hs:100:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Eq a
+    • In the instance declaration for ‘EQF GroupEQ (G.Group l a)’
+[248 of 256] Compiling XMonad.Layout.Groups.Wmii ( XMonad/Layout/Groups/Wmii.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Layout/Groups/Wmii.o )
+[249 of 256] Compiling XMonad.Actions.BluetileCommands ( XMonad/Actions/BluetileCommands.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/BluetileCommands.o )
+[250 of 256] Compiling XMonad.Config.Bluetile ( XMonad/Config/Bluetile.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Config/Bluetile.o )
+
+XMonad/Config/Bluetile.hs:64:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[251 of 256] Compiling XMonad.Actions.AfterDrag ( XMonad/Actions/AfterDrag.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/AfterDrag.o )
+[252 of 256] Compiling XMonad.Actions.FloatSnap ( XMonad/Actions/FloatSnap.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Actions/FloatSnap.o )
+[253 of 256] Compiling XMonad.Doc.Developing ( XMonad/Doc/Developing.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Doc/Developing.o )
+[254 of 256] Compiling XMonad.Doc.Extending ( XMonad/Doc/Extending.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Doc/Extending.o )
+[255 of 256] Compiling XMonad.Doc.Configuring ( XMonad/Doc/Configuring.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Doc/Configuring.o )
+[256 of 256] Compiling XMonad.Doc       ( XMonad/Doc.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/XMonad/Doc.o )
+Installing library in
+/home/case/xmonadrc/.stack-work/install/x86_64-linux-ncurses6/lts-7.14/8.0.1/lib/x86_64-linux-ghc-8.0.1/xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd
+Registering xmonad-contrib-0.12...

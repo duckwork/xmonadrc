@@ -1,12 +1,25 @@
+{-# LANGUAGE ForeignFunctionInterface #-}
 module XMonad.Util.XResources 
     ( xresources
     , XResources (..)
     ) where
 
 import Data.Maybe
-import Graphics.X11.XRM
 import Graphics.X11.Xlib
 import System.IO.Unsafe (unsafePerformIO)
+
+import Foreign
+import Foreign.C.String
+
+getDefault :: Display -> String -> String -> IO (Maybe String)
+getDefault dpy prog opt = withCString prog $ \c_prog ->
+    withCString opt $ \c_opt -> do
+        s <- xGetDefault dpy c_prog c_opt
+        if s == nullPtr
+           then return Nothing
+           else Just <$> peekCString s
+foreign import ccall unsafe "HsXlib.h XGetDefault"
+    xGetDefault :: Display -> CString -> CString -> IO CString
 
 xdefault :: String -> IO (Maybe String)
 xdefault xd

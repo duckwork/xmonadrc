@@ -3,7 +3,7 @@ name: xmonadrc
 version: 0.0.1.0
 synopsis: Case's xmonad configuration
 homepage: http://duckwork.github.io
-license: WTFPL
+license: PublicDomain
 license-file: LICENSE
 author: Case Duckworth <cased123@gmail.com>
 maintainer: Case Duckworth <cased123@gmail.com>
@@ -29,8 +29,10 @@ library
   hs-source-dirs: src
   ghc-options: -Wall -Werror
 
-  build-depends: X11 >= 1.6 && < 2.0
-               , base >= 4.0 && < 5.0
+  build-depends: base >= 4.0 && < 5.0
+               , X11 >= 1.7 && < 1.8
+               , containers >= 0.4 && < 0.6
+               , X11-xft >= 0.2
                , xmonad == 0.12
                , xmonad-contrib == 0.12
 

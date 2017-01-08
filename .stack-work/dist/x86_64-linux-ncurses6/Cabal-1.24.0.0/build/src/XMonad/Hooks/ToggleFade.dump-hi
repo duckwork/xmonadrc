@@ -1,0 +1,998 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-08 01:34:02.304681294 UTC
+
+interface xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv:XMonad.Hooks.ToggleFade 8001
+  interface hash: afaf13bb0ae3efb9236f23bd777b73d1
+  ABI hash: 067315808740ada1c752c88a6c41f0f3
+  export-list hash: 96db371ccb91a3332a2d88544478819b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7f7abc568d9874002de86883a11db38a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  XMonad.Hooks.ToggleFade.doFade
+  XMonad.Hooks.ToggleFade.toggleFade
+  XMonad.Hooks.ToggleFade.toggleFadeLogHook
+  XMonad.Hooks.ToggleFade.toggleFadeLogHook'
+  XMonad.Hooks.ToggleFade.NoFadeSet{XMonad.Hooks.ToggleFade.NoFadeSet getNFS}
+module dependencies:
+package dependencies: X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-default-0.7.1.1@data-default-0.7.1.1-5uix4eIzBY9IcVb4V2HbW3
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-FYQpjIylblBDctdkHAFeXA
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.2.6.2@directory-1.2.6.2
+                      dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv
+                      extensible-exceptions-0.1.1.4@extensible-exceptions-0.1.1.4-3h0ykvvAO915cRhUyj3rRV
+                      filepath-1.4.1.0@filepath-1.4.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-6glXNhHF891B41ZfuI8hU8
+                      process-1.4.2.0@process-1.4.2.0
+                      setlocale-1.0.0.4@setlocale-1.0.0.4-EUtO5CfNQTBH7QTFQEDDaI
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.0@unix-2.7.2.0
+                      xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI
+                      xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84:Data.Default.Instances.OldLocale
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad.Config
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv:Data.DList
+import  -/  X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL:Graphics.X11.Types ceac75734ca8d1542c4af611b44f8f92
+import  -/  base-4.9.0.0:Control.Monad 7767aebfd53f0b584cef2fe66ad3986c
+import  -/  base-4.9.0.0:Data.Typeable.Internal afcb0b0c2de004fb4d41fc6bb4a51cee
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Read 817c914615ac8e308afc0c675fb3f671
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:Text.ParserCombinators.ReadPrec 9512e2f4b227f507f87a150887202aed
+import  -/  base-4.9.0.0:Text.Read.Lex fe3dd7b823826bf6870140c5363f9596
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set 3ed2324fd1e757464a8ac2b636a64e5a
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 7491ab24d955eec25fba8e0d89b657f1
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM:Control.Monad.Reader.Class a2c7beb266585be238cfe9f5989c52b7
+import  -/  xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad b456b70eb07734470cc1ac0ec218c4da
+import  -/  xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad.Core 914c546ed1a79c78146a872883560c01
+import  -/  xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad.ManageHook cefc3fffee7a6304c5b122c76de1b6e3
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Hooks.FadeInactive 7df1d12f6e444802265bb58376a5f2ec
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Util.ExtensibleState 56467c9899a9570f126b667ed17f9642
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fExtensionClassNoFadeSet ::
+    XMonad.Core.ExtensionClass XMonad.Hooks.ToggleFade.NoFadeSet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ XMonad.Hooks.ToggleFade.NoFadeSet
+                  XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet_$cp1ExtensionClass
+                  XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet_$cinitialValue
+                  XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet_$cextensionType -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fExtensionClassNoFadeSet1 ::
+    GHC.Prim.Proxy# XMonad.Hooks.ToggleFade.NoFadeSet
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# XMonad.Hooks.ToggleFade.NoFadeSet) ->
+                 XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet2) -}
+db1d878b7f3e092f90f9f048192a59d5
+  $fExtensionClassNoFadeSet2 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet3
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   XMonad.Hooks.ToggleFade.$tcNoFadeSet
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+1461e0cd67b38e2fd5eecfdf98d9ac3f
+  $fExtensionClassNoFadeSet3 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   10533554781445976609##
+                   794580956806096233##) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fExtensionClassNoFadeSet_$cextensionType ::
+    XMonad.Hooks.ToggleFade.NoFadeSet -> XMonad.Core.StateExtension
+  {- Arity: 1 -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fExtensionClassNoFadeSet_$cinitialValue ::
+    XMonad.Hooks.ToggleFade.NoFadeSet
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (XMonad.Hooks.ToggleFade.NoFadeSet
+                   (Data.Set.Base.Tip @ Graphics.X11.Types.Window)) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fExtensionClassNoFadeSet_$cp1ExtensionClass ::
+    Data.Typeable.Internal.Typeable XMonad.Hooks.ToggleFade.NoFadeSet
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet1
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <XMonad.Hooks.ToggleFade.NoFadeSet>_N)) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet :: GHC.Read.Read XMonad.Hooks.ToggleFade.NoFadeSet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ XMonad.Hooks.ToggleFade.NoFadeSet
+                  XMonad.Hooks.ToggleFade.$fReadNoFadeSet_$creadsPrec
+                  XMonad.Hooks.ToggleFade.$fReadNoFadeSet_$creadList
+                  XMonad.Hooks.ToggleFade.$fReadNoFadeSet_$creadPrec
+                  XMonad.Hooks.ToggleFade.$fReadNoFadeSet_$creadListPrec -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([XMonad.Hooks.ToggleFade.NoFadeSet]
+        -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,A><L,C(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta1 :: [XMonad.Hooks.ToggleFade.NoFadeSet]
+                            -> Text.ParserCombinators.ReadP.P b) ->
+                 GHC.Read.$wlist
+                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                   XMonad.Hooks.ToggleFade.$fReadNoFadeSet2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <XMonad.Hooks.ToggleFade.NoFadeSet>_R))
+                   @ b
+                   eta1) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP
+         XMonad.Hooks.ToggleFade.NoFadeSet
+  {- Arity: 1,
+     Unfolding: (GHC.Read.$fReadDouble10
+                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                   XMonad.Hooks.ToggleFade.$fReadNoFadeSet3
+                     `cast`
+                   (Trans
+                        (<Text.ParserCombinators.ReadPrec.Prec>_R
+                         ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                       <XMonad.Hooks.ToggleFade.NoFadeSet>_R))
+                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                  <XMonad.Hooks.ToggleFade.NoFadeSet>_R)))) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XMonad.Hooks.ToggleFade.NoFadeSet
+        -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (w1 :: XMonad.Hooks.ToggleFade.NoFadeSet
+                          -> Text.ParserCombinators.ReadP.P b) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 XMonad.Hooks.ToggleFade.$w$creadPrec ww1 @ b w1 }) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet4 ::
+    Text.ParserCombinators.ReadP.P [XMonad.Hooks.ToggleFade.NoFadeSet]
+  {- Unfolding: (GHC.Read.$wlist
+                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                   XMonad.Hooks.ToggleFade.$fReadNoFadeSet2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <XMonad.Hooks.ToggleFade.NoFadeSet>_R))
+                   @ [XMonad.Hooks.ToggleFade.NoFadeSet]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [XMonad.Hooks.ToggleFade.NoFadeSet])) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS
+      [XMonad.Hooks.ToggleFade.NoFadeSet]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [XMonad.Hooks.ToggleFade.NoFadeSet]
+                   XMonad.Hooks.ToggleFade.$fReadNoFadeSet4) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec
+      [XMonad.Hooks.ToggleFade.NoFadeSet]
+  {- Arity: 2, Strictness: <L,A><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                XMonad.Hooks.ToggleFade.$fReadNoFadeSet1
+                  `cast`
+                (Trans
+                     (<Text.ParserCombinators.ReadPrec.Prec>_R
+                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <[XMonad.Hooks.ToggleFade.NoFadeSet]>_R))
+                     (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <[XMonad.Hooks.ToggleFade.NoFadeSet]>_R))) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet_$creadPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec
+      XMonad.Hooks.ToggleFade.NoFadeSet
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                XMonad.Hooks.ToggleFade.$fReadNoFadeSet2
+                  `cast`
+                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                          <XMonad.Hooks.ToggleFade.NoFadeSet>_R)) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fReadNoFadeSet_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS
+         XMonad.Hooks.ToggleFade.NoFadeSet
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                   ((GHC.Read.$fReadDouble10
+                       @ XMonad.Hooks.ToggleFade.NoFadeSet
+                       XMonad.Hooks.ToggleFade.$fReadNoFadeSet3
+                         `cast`
+                       (Trans
+                            (<Text.ParserCombinators.ReadPrec.Prec>_R
+                             ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                           <XMonad.Hooks.ToggleFade.NoFadeSet>_R))
+                            (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                      <XMonad.Hooks.ToggleFade.NoFadeSet>_R)))
+                       eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0]
+                         <XMonad.Hooks.ToggleFade.NoFadeSet>_R)
+                      @ XMonad.Hooks.ToggleFade.NoFadeSet
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ XMonad.Hooks.ToggleFade.NoFadeSet))) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fShowNoFadeSet :: GHC.Show.Show XMonad.Hooks.ToggleFade.NoFadeSet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ XMonad.Hooks.ToggleFade.NoFadeSet
+                  XMonad.Hooks.ToggleFade.$fShowNoFadeSet_$cshowsPrec
+                  XMonad.Hooks.ToggleFade.$fShowNoFadeSet_$cshow
+                  XMonad.Hooks.ToggleFade.$fShowNoFadeSet_$cshowList -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fShowNoFadeSet1 ::
+    XMonad.Hooks.ToggleFade.NoFadeSet -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w :: XMonad.Hooks.ToggleFade.NoFadeSet) ->
+                 case w of ww { XMonad.Hooks.ToggleFade.NoFadeSet ww1 ->
+                 XMonad.Hooks.ToggleFade.$w$cshowsPrec 0# ww1 }) -}
+190bba0b5237841c245ef0839f4b1133
+  $fShowNoFadeSet2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+185daee42c1cb5069b3d62854a0de5d6
+  $fShowNoFadeSet3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "getNFS = "#) -}
+db123f113d9248e4efef563bcf9c0768
+  $fShowNoFadeSet4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NoFadeSet {"#) -}
+6661bb8965bedcd055d4175faed86540
+  $fShowNoFadeSet5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "[]"#
+                   XMonad.Hooks.ToggleFade.$fShowNoFadeSet_s) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fShowNoFadeSet_$cshow ::
+    XMonad.Hooks.ToggleFade.NoFadeSet -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: XMonad.Hooks.ToggleFade.NoFadeSet) ->
+                 case w of ww { XMonad.Hooks.ToggleFade.NoFadeSet ww1 ->
+                 XMonad.Hooks.ToggleFade.$w$cshow ww1 }) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fShowNoFadeSet_$cshowList ::
+    [XMonad.Hooks.ToggleFade.NoFadeSet] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                   XMonad.Hooks.ToggleFade.$fShowNoFadeSet1) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $fShowNoFadeSet_$cshowsPrec ::
+    GHC.Types.Int
+    -> XMonad.Hooks.ToggleFade.NoFadeSet -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: XMonad.Hooks.ToggleFade.NoFadeSet) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { XMonad.Hooks.ToggleFade.NoFadeSet ww3 ->
+                 XMonad.Hooks.ToggleFade.$w$cshowsPrec ww1 ww3 } }) -}
+3eb540379555db9a1d6c73849af0e804
+  $fShowNoFadeSet_s :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   XMonad.Hooks.ToggleFade.$fShowNoFadeSet2
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+783d2595618117301430170690bcab31
+  $fShowNoFadeSet_showl :: [GHC.Word.Word64] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+c0e4ce4d5eec439f179e5dd39ff01f44
+  $tc'NoFadeSet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2355647273922761847##
+                   4158828844261893930##
+                   XMonad.Hooks.ToggleFade.$trModule
+                   XMonad.Hooks.ToggleFade.$tc'NoFadeSet1) -}
+5f64b8c7a6cd08fcd454c86cb49ae480
+  $tc'NoFadeSet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NoFadeSet"#) -}
+12c202cad31b0f01bde00ac25b499f6f
+  $tcNoFadeSet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10533554781445976609##
+                   794580956806096233##
+                   XMonad.Hooks.ToggleFade.$trModule
+                   XMonad.Hooks.ToggleFade.$tcNoFadeSet1) -}
+df285229dac8201aadf8965a12304d7f
+  $tcNoFadeSet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "NoFadeSet"#) -}
+fce8de84b995eebc37b015ecd045bd2d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   XMonad.Hooks.ToggleFade.$trModule2
+                   XMonad.Hooks.ToggleFade.$trModule1) -}
+2bbb5016a050bef61de6f1a2a725aab2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "XMonad.Hooks.ToggleFade"#) -}
+255506fd9d5be908d81ad87701664467
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv"#) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  $w$creadPrec ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XMonad.Hooks.ToggleFade.NoFadeSet
+        -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,U><L,C(U)>, Inline: [0] -}
+a6ab63a60dff01c30b40d40dce0e70b6
+  $w$cshow ::
+    Data.Set.Base.Set Graphics.X11.Types.Window -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Data.Set.Base.Set
+                            Graphics.X11.Types.Window) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   XMonad.Hooks.ToggleFade.$fShowNoFadeSet4
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      XMonad.Hooks.ToggleFade.$fShowNoFadeSet3
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         Data.Set.Base.$fShowSet1
+                         (case Data.Set.Base.$fDataSet1
+                                 @ GHC.Word.Word64
+                                 (GHC.Types.[] @ GHC.Word.Word64)
+                                 ww of wild {
+                            [] -> XMonad.Hooks.ToggleFade.$fShowNoFadeSet5
+                            : x xs
+                            -> GHC.Types.:
+                                 @ GHC.Types.Char
+                                 GHC.Show.showList__2
+                                 (GHC.Word.$fShowWord3
+                                    x
+                                    (XMonad.Hooks.ToggleFade.$fShowNoFadeSet_showl xs)) })))) -}
+6b716742edd06543180a4394324d9bb9
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Data.Set.Base.Set Graphics.X11.Types.Window -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Data.Set.Base.Set Graphics.X11.Types.Window) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = Data.Set.Base.$w$cshowsPrec
+                       @ GHC.Word.Word64
+                       GHC.Word.$fShowWord64
+                       0#
+                       ww1
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       XMonad.Hooks.ToggleFade.$fShowNoFadeSet4
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          XMonad.Hooks.ToggleFade.$fShowNoFadeSet3
+                          (f (GHC.Base.++
+                                @ GHC.Types.Char
+                                XMonad.Hooks.ToggleFade.$fShowNoFadeSet2
+                                x)))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 x)) }) -}
+93c989567a55f5839c4d05c59fb4e103
+  $w$sgo1 ::
+    GHC.Prim.Word#
+    -> Data.Set.Base.Set Graphics.X11.Types.Window
+    -> Data.Set.Base.Set Graphics.X11.Types.Window
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+3808d96f37b17d774f743d8f5ac916ac
+  $w$sgo5 ::
+    GHC.Prim.Word#
+    -> Data.Set.Base.Set Graphics.X11.Types.Window
+    -> Data.Set.Base.Set Graphics.X11.Types.Window
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+1a7b558d545da74cfe998fb694eb0391
+  $wgo5 ::
+    GHC.Prim.Word#
+    -> Data.Set.Base.Set Graphics.X11.Types.Window -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+522e83c0ee304873af4a1cf278c828b5
+  $wtoggleFadeLogHook' ::
+    XMonad.Core.Query GHC.Types.Bool
+    -> GHC.Real.Rational
+    -> XMonad.Core.XConf
+    -> XMonad.Core.WorkspaceId
+    -> XMonad.Core.Layout Graphics.X11.Types.Window
+    -> GHC.Base.Maybe (XMonad.StackSet.Stack Graphics.X11.Types.Window)
+    -> XMonad.Core.ScreenId
+    -> XMonad.Core.ScreenDetail
+    -> [XMonad.StackSet.Screen
+          XMonad.Core.WorkspaceId
+          (XMonad.Core.Layout Graphics.X11.Types.Window)
+          Graphics.X11.Types.Window
+          XMonad.Core.ScreenId
+          XMonad.Core.ScreenDetail]
+    -> [XMonad.StackSet.Workspace
+          XMonad.Core.WorkspaceId
+          (XMonad.Core.Layout Graphics.X11.Types.Window)
+          Graphics.X11.Types.Window]
+    -> Data.Map.Base.Map
+         Graphics.X11.Types.Window XMonad.StackSet.RationalRect
+    -> Data.Set.Base.Set Graphics.X11.Types.Window
+    -> Data.Map.Base.Map Graphics.X11.Types.Window GHC.Types.Int
+    -> GHC.Base.Maybe
+         (Graphics.X11.Xlib.Types.Position
+          -> Graphics.X11.Xlib.Types.Position -> XMonad.Core.X (),
+          XMonad.Core.X ())
+    -> GHC.Prim.Word#
+    -> Data.Map.Base.Map
+         GHC.Base.String
+         (Data.Either.Either GHC.Base.String XMonad.Core.StateExtension)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), XMonad.Core.XState) #)
+  {- Arity: 17,
+     Strictness: <L,C(U)><L,U><L,U><S,U><L,U><S,U><S,U><S,U><L,U><L,U><L,U><S,U><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: XMonad.Core.Query GHC.Types.Bool)
+                   (w1 :: GHC.Real.Rational)
+                   (w2 :: XMonad.Core.XConf)
+                   (ww :: XMonad.Core.WorkspaceId)
+                   (ww1 :: XMonad.Core.Layout Graphics.X11.Types.Window)
+                   (ww2 :: GHC.Base.Maybe
+                             (XMonad.StackSet.Stack Graphics.X11.Types.Window))
+                   (ww3 :: XMonad.Core.ScreenId)
+                   (ww4 :: XMonad.Core.ScreenDetail)
+                   (ww5 :: [XMonad.StackSet.Screen
+                              XMonad.Core.WorkspaceId
+                              (XMonad.Core.Layout Graphics.X11.Types.Window)
+                              Graphics.X11.Types.Window
+                              XMonad.Core.ScreenId
+                              XMonad.Core.ScreenDetail])
+                   (ww6 :: [XMonad.StackSet.Workspace
+                              XMonad.Core.WorkspaceId
+                              (XMonad.Core.Layout Graphics.X11.Types.Window)
+                              Graphics.X11.Types.Window])
+                   (ww7 :: Data.Map.Base.Map
+                             Graphics.X11.Types.Window XMonad.StackSet.RationalRect)
+                   (ww8 :: Data.Set.Base.Set Graphics.X11.Types.Window)
+                   (ww9 :: Data.Map.Base.Map Graphics.X11.Types.Window GHC.Types.Int)
+                   (ww10 :: GHC.Base.Maybe
+                              (Graphics.X11.Xlib.Types.Position
+                               -> Graphics.X11.Xlib.Types.Position -> XMonad.Core.X (),
+                               XMonad.Core.X ()))
+                   (ww11 :: GHC.Prim.Word#)
+                   (ww12 :: Data.Map.Base.Map
+                              GHC.Base.String
+                              (Data.Either.Either GHC.Base.String XMonad.Core.StateExtension))
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 XMonad.Hooks.FadeInactive.$wfadeOutLogHook
+                   (XMonad.Hooks.FadeInactive.fadeIf1
+                      (\ (r1 :: GHC.Word.Word64) ->
+                       let {
+                         m1 :: XMonad.Core.X GHC.Types.Bool
+                         = w `cast`
+                           (Trans
+                                (XMonad.Core.N:Query[0] <GHC.Types.Bool>_N)
+                                (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <GHC.Word.Word64>_R
+                                     <XMonad.Core.X>_R
+                                     <GHC.Types.Bool>_N))
+                             r1
+                       } in
+                       (\ (r2 :: XMonad.Core.XConf) ->
+                        let {
+                          m2 :: Control.Monad.Trans.State.Lazy.StateT
+                                  XMonad.Core.XState GHC.Types.IO GHC.Types.Bool
+                          = m1
+                              `cast`
+                            (Trans
+                                 (XMonad.Core.N:X[0] <GHC.Types.Bool>_N)
+                                 (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                      <*>_N
+                                      <XMonad.Core.XConf>_R
+                                      <Control.Monad.Trans.State.Lazy.StateT
+                                         XMonad.Core.XState GHC.Types.IO>_R
+                                      <GHC.Types.Bool>_N))
+                              r2
+                        } in
+                        (\ (s1 :: XMonad.Core.XState)
+                           (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case (m2
+                                 `cast`
+                               (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                    <XMonad.Core.XState>_N <GHC.Types.IO>_R <GHC.Types.Bool>_N)
+                                 s1)
+                                `cast`
+                              (GHC.Types.N:IO[0] <(GHC.Types.Bool, XMonad.Core.XState)>_R)
+                                s of ds1 { (#,#) ipv ipv1 ->
+                         case (((XMonad.Util.ExtensibleState.get
+                                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                                   XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet)
+                                  `cast`
+                                (Trans
+                                     (XMonad.Core.N:X[0] <XMonad.Hooks.ToggleFade.NoFadeSet>_N)
+                                     (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                          <*>_N
+                                          <XMonad.Core.XConf>_R
+                                          <Control.Monad.Trans.State.Lazy.StateT
+                                             XMonad.Core.XState GHC.Types.IO>_R
+                                          <XMonad.Hooks.ToggleFade.NoFadeSet>_N))
+                                  r2)
+                                 `cast`
+                               (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                    <XMonad.Core.XState>_N
+                                    <GHC.Types.IO>_R
+                                    <XMonad.Hooks.ToggleFade.NoFadeSet>_N)
+                                 (case ipv1 of wild { (,) a1 s' -> s' }))
+                                `cast`
+                              (GHC.Types.N:IO[0]
+                                   <(XMonad.Hooks.ToggleFade.NoFadeSet, XMonad.Core.XState)>_R)
+                                ipv of ds { (#,#) ipv2 ipv3 ->
+                         (# ipv2,
+                            (case ipv1 of wild { (,) a1 s' ->
+                             case a1 of wild1 {
+                               GHC.Types.False -> GHC.Types.False
+                               GHC.Types.True
+                               -> case r1 of ww13 { GHC.Word.W64# ww14 ->
+                                  case ipv3 of wild2 { (,) a2 s'1 ->
+                                  case a2 of wild3 { XMonad.Hooks.ToggleFade.NoFadeSet ds2 ->
+                                  case XMonad.Hooks.ToggleFade.$wgo5 ww14 ds2 of wild4 {
+                                    GHC.Types.False -> GHC.Types.True
+                                    GHC.Types.True -> GHC.Types.False } } } } } },
+                             case ipv3 of wild { (,) a1 s' -> s' }) #) } })
+                          `cast`
+                        (Trans
+                             (<XMonad.Core.XState>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <(GHC.Types.Bool, XMonad.Core.XState)>_R))
+                             (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                       <XMonad.Core.XState>_N
+                                       <GHC.Types.IO>_R
+                                       <GHC.Types.Bool>_N))))
+                         `cast`
+                       (Trans
+                            (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                      <*>_N
+                                      <XMonad.Core.XConf>_R
+                                      <Control.Monad.Trans.State.Lazy.StateT
+                                         XMonad.Core.XState GHC.Types.IO>_R
+                                      <GHC.Types.Bool>_N))
+                            (Sym (XMonad.Core.N:X[0]) <GHC.Types.Bool>_N)))
+                        `cast`
+                      (Trans
+                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <GHC.Word.Word64>_R
+                                     <XMonad.Core.X>_R
+                                     <GHC.Types.Bool>_N))
+                           (Sym (XMonad.Core.N:Query[0]) <GHC.Types.Bool>_N))
+                      w1)
+                     `cast`
+                   (Trans
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Graphics.X11.Types.Window>_R
+                                  <XMonad.Core.X>_R
+                                  <GHC.Real.Rational>_N))
+                        (Sym (XMonad.Core.N:Query[0]) <GHC.Real.Rational>_N))
+                   w2
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   w3) -}
+835c806a8b8ec050d8eb9e1f8cd2e056
+  data NoFadeSet
+    = NoFadeSet {getNFS :: Data.Set.Base.Set Graphics.X11.Types.Window}
+30871a90d3acfde0855e5cbc7f1d320d
+  doFade :: Graphics.X11.Types.Window -> XMonad.Core.X GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U)>,
+     Unfolding: (XMonad.Hooks.ToggleFade.doFade1
+                   `cast`
+                 (<Graphics.X11.Types.Window>_R
+                  ->_R Trans
+                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <XMonad.Core.XConf>_R
+                                     <Control.Monad.Trans.State.Lazy.StateT
+                                        XMonad.Core.XState GHC.Types.IO>_R
+                                     <GHC.Types.Bool>_N))
+                           (Sym (XMonad.Core.N:X[0]) <GHC.Types.Bool>_N))) -}
+c987389dafa895abe0e0c8aead4f66d8
+  doFade1 ::
+    Graphics.X11.Types.Window
+    -> XMonad.Core.XConf
+    -> Control.Monad.Trans.State.Lazy.StateT
+         XMonad.Core.XState GHC.Types.IO GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U)>,
+     Unfolding: (\ (w :: Graphics.X11.Types.Window)
+                   (r1 :: XMonad.Core.XConf) ->
+                 let {
+                   m1 :: Control.Monad.Trans.State.Lazy.StateT
+                           XMonad.Core.XState GHC.Types.IO XMonad.Hooks.ToggleFade.NoFadeSet
+                   = XMonad.Hooks.ToggleFade.doFade_x
+                       `cast`
+                     (Trans
+                          (XMonad.Core.N:X[0] <XMonad.Hooks.ToggleFade.NoFadeSet>_N)
+                          (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <*>_N
+                               <XMonad.Core.XConf>_R
+                               <Control.Monad.Trans.State.Lazy.StateT
+                                  XMonad.Core.XState GHC.Types.IO>_R
+                               <XMonad.Hooks.ToggleFade.NoFadeSet>_N))
+                       r1
+                 } in
+                 (\ (s1 :: XMonad.Core.XState)
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (m1
+                          `cast`
+                        (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                             <XMonad.Core.XState>_N
+                             <GHC.Types.IO>_R
+                             <XMonad.Hooks.ToggleFade.NoFadeSet>_N)
+                          s1)
+                         `cast`
+                       (GHC.Types.N:IO[0]
+                            <(XMonad.Hooks.ToggleFade.NoFadeSet, XMonad.Core.XState)>_R)
+                         s of ds { (#,#) ipv ipv1 ->
+                  (# ipv,
+                     (case w of ww { GHC.Word.W64# ww1 ->
+                      case ipv1 of wild { (,) a1 s' ->
+                      case a1 of wild1 { XMonad.Hooks.ToggleFade.NoFadeSet ds1 ->
+                      case XMonad.Hooks.ToggleFade.$wgo5 ww1 ds1 of wild2 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } } } },
+                      case ipv1 of wild { (,) a1 s' -> s' }) #) })
+                   `cast`
+                 (Trans
+                      (<XMonad.Core.XState>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <(GHC.Types.Bool, XMonad.Core.XState)>_R))
+                      (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                <XMonad.Core.XState>_N <GHC.Types.IO>_R <GHC.Types.Bool>_N)))) -}
+657b22fe898c687e26dd89c6143f8bc2
+  doFade_x :: XMonad.Core.X XMonad.Hooks.ToggleFade.NoFadeSet
+  {- Unfolding: (XMonad.Util.ExtensibleState.get
+                   @ XMonad.Hooks.ToggleFade.NoFadeSet
+                   XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet) -}
+8e983cfcb97f4b76fe78d394d9b947fd
+  getNFS ::
+    XMonad.Hooks.ToggleFade.NoFadeSet
+    -> Data.Set.Base.Set Graphics.X11.Types.Window
+  RecSel Left XMonad.Hooks.ToggleFade.NoFadeSet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Hooks.ToggleFade.NoFadeSet) ->
+                 case ds of wild { XMonad.Hooks.ToggleFade.NoFadeSet ds1 ->
+                 ds1 }) -}
+c264afaca5280f7441aa7479ecc4b848
+  toggleFade :: Graphics.X11.Types.Window -> XMonad.Core.X ()
+  {- Arity: 2, Strictness: <L,U(U)>,
+     Unfolding: (XMonad.Hooks.ToggleFade.toggleFade1
+                   `cast`
+                 (<Graphics.X11.Types.Window>_R
+                  ->_R Trans
+                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <XMonad.Core.XConf>_R
+                                     <Control.Monad.Trans.State.Lazy.StateT
+                                        XMonad.Core.XState GHC.Types.IO>_R
+                                     <()>_N))
+                           (Sym (XMonad.Core.N:X[0]) <()>_N))) -}
+a137150bd1575379b51b32406cea7beb
+  toggleFade1 ::
+    Graphics.X11.Types.Window
+    -> XMonad.Core.XConf
+    -> Control.Monad.Trans.State.Lazy.StateT
+         XMonad.Core.XState GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U(U)>,
+     Unfolding: (\ (x :: Graphics.X11.Types.Window)
+                   (r1 :: XMonad.Core.XConf) ->
+                 let {
+                   m2 :: Control.Monad.Trans.State.Lazy.StateT
+                           XMonad.Core.XState GHC.Types.IO XMonad.Hooks.ToggleFade.NoFadeSet
+                   = XMonad.Hooks.ToggleFade.doFade_x
+                       `cast`
+                     (Trans
+                          (XMonad.Core.N:X[0] <XMonad.Hooks.ToggleFade.NoFadeSet>_N)
+                          (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <*>_N
+                               <XMonad.Core.XConf>_R
+                               <Control.Monad.Trans.State.Lazy.StateT
+                                  XMonad.Core.XState GHC.Types.IO>_R
+                               <XMonad.Hooks.ToggleFade.NoFadeSet>_N))
+                       r1
+                 } in
+                 (\ (s1 :: XMonad.Core.XState)
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (m2
+                          `cast`
+                        (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                             <XMonad.Core.XState>_N
+                             <GHC.Types.IO>_R
+                             <XMonad.Hooks.ToggleFade.NoFadeSet>_N)
+                          s1)
+                         `cast`
+                       (GHC.Types.N:IO[0]
+                            <(XMonad.Hooks.ToggleFade.NoFadeSet, XMonad.Core.XState)>_R)
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  (((XMonad.Util.ExtensibleState.put
+                       @ XMonad.Hooks.ToggleFade.NoFadeSet
+                       XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet
+                       (case ipv1 of wild { (,) a1 s' ->
+                        case a1 of wild1 { XMonad.Hooks.ToggleFade.NoFadeSet ds ->
+                        case x of ww { GHC.Word.W64# ww1 ->
+                        case XMonad.Hooks.ToggleFade.$wgo5 ww1 ds of wild2 {
+                          GHC.Types.False
+                          -> XMonad.Hooks.ToggleFade.NoFadeSet
+                               (XMonad.Hooks.ToggleFade.$w$sgo1 ww1 ds)
+                          GHC.Types.True
+                          -> XMonad.Hooks.ToggleFade.NoFadeSet
+                               (XMonad.Hooks.ToggleFade.$w$sgo5 ww1 ds) } } } }))
+                      `cast`
+                    (Trans
+                         (XMonad.Core.N:X[0] <()>_N)
+                         (Control.Monad.Trans.Reader.N:ReaderT[0]
+                              <*>_N
+                              <XMonad.Core.XConf>_R
+                              <Control.Monad.Trans.State.Lazy.StateT
+                                 XMonad.Core.XState GHC.Types.IO>_R
+                              <()>_N))
+                      r1)
+                     `cast`
+                   (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                        <XMonad.Core.XState>_N <GHC.Types.IO>_R <()>_N)
+                     (case ipv1 of wild { (,) a1 s' -> s' }))
+                    `cast`
+                  (GHC.Types.N:IO[0] <((), XMonad.Core.XState)>_R)
+                    ipv })
+                   `cast`
+                 (Trans
+                      (<XMonad.Core.XState>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <((), XMonad.Core.XState)>_R))
+                      (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                <XMonad.Core.XState>_N <GHC.Types.IO>_R <()>_N)))) -}
+e048ceb7afa79c10e8b42cf985118804
+  toggleFadeLogHook :: GHC.Real.Rational -> XMonad.Core.X ()
+  {- Arity: 4,
+     Unfolding: InlineRule (0, True, True)
+                XMonad.Hooks.ToggleFade.toggleFadeLogHook1
+                  `cast`
+                (<GHC.Real.Rational>_R
+                 ->_R Trans
+                          (<XMonad.Core.XConf>_R
+                           ->_R Trans
+                                    (<XMonad.Core.XState>_R
+                                     ->_R Sym (GHC.Types.N:IO[0] <((), XMonad.Core.XState)>_R))
+                                    (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                              <XMonad.Core.XState>_N <GHC.Types.IO>_R <()>_N)))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <XMonad.Core.XConf>_R
+                                         <Control.Monad.Trans.State.Lazy.StateT
+                                            XMonad.Core.XState GHC.Types.IO>_R
+                                         <()>_N))
+                               (Sym (XMonad.Core.N:X[0]) <()>_N))) -}
+389680bf7a79cd4b5fb1e5d4deb19205
+  toggleFadeLogHook' ::
+    XMonad.Core.Query GHC.Types.Bool
+    -> GHC.Real.Rational -> XMonad.Core.X ()
+  {- Arity: 5,
+     Strictness: <L,C(U)><L,U><L,U><S(SLSSSLLLSSSSS),1*U(U,U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                XMonad.Hooks.ToggleFade.toggleFadeLogHook'1
+                  `cast`
+                (<XMonad.Core.Query GHC.Types.Bool>_R
+                 ->_R <GHC.Real.Rational>_R
+                 ->_R Trans
+                          (<XMonad.Core.XConf>_R
+                           ->_R Trans
+                                    (<XMonad.Core.XState>_R
+                                     ->_R Sym (GHC.Types.N:IO[0] <((), XMonad.Core.XState)>_R))
+                                    (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                              <XMonad.Core.XState>_N <GHC.Types.IO>_R <()>_N)))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <XMonad.Core.XConf>_R
+                                         <Control.Monad.Trans.State.Lazy.StateT
+                                            XMonad.Core.XState GHC.Types.IO>_R
+                                         <()>_N))
+                               (Sym (XMonad.Core.N:X[0]) <()>_N))) -}
+26a5a2ff4c9ceef138f28a065184b09a
+  toggleFadeLogHook'1 ::
+    XMonad.Core.Query GHC.Types.Bool
+    -> GHC.Real.Rational
+    -> XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), XMonad.Core.XState) #)
+  {- Arity: 5,
+     Strictness: <L,C(U)><L,U><L,U><S(SLSSSLLLSSSSS),1*U(U,U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ (w :: XMonad.Core.Query GHC.Types.Bool)
+                   (w1 :: GHC.Real.Rational)
+                   (w2 :: XMonad.Core.XConf)
+                   (w3 :: XMonad.Core.XState)
+                   (w4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w3 of ww { XMonad.Core.XState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 XMonad.Hooks.ToggleFade.$wtoggleFadeLogHook'
+                   w
+                   w1
+                   w2
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   w4 }) -}
+c03b43202bee4099c90741cf724308d9
+  toggleFadeLogHook1 ::
+    GHC.Real.Rational
+    -> XMonad.Core.XConf
+    -> XMonad.Core.XState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), XMonad.Core.XState) #)
+  {- Arity: 4,
+     Unfolding: (\ (w :: GHC.Real.Rational)
+                   (w1 :: XMonad.Core.XConf)
+                   (w2 :: XMonad.Core.XState)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w2 of ww { XMonad.Core.XState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 XMonad.Hooks.ToggleFade.$wtoggleFadeLogHook'
+                   XMonad.Hooks.FadeInactive.fadeInactiveLogHook2
+                     `cast`
+                   (Trans
+                        (<GHC.Word.Word64>_R
+                         ->_R Trans
+                                  (<XMonad.Core.XConf>_R
+                                   ->_R Trans
+                                            (<XMonad.Core.XState>_R
+                                             ->_R Sym (GHC.Types.N:IO[0]
+                                                           <(GHC.Types.Bool,
+                                                             XMonad.Core.XState)>_R))
+                                            (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                      <XMonad.Core.XState>_N
+                                                      <GHC.Types.IO>_R
+                                                      <GHC.Types.Bool>_N)))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <XMonad.Core.XConf>_R
+                                                 <Control.Monad.Trans.State.Lazy.StateT
+                                                    XMonad.Core.XState GHC.Types.IO>_R
+                                                 <GHC.Types.Bool>_N))
+                                       (Sym (XMonad.Core.N:X[0]) <GHC.Types.Bool>_N)))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <GHC.Word.Word64>_R
+                                       <XMonad.Core.X>_R
+                                       <GHC.Types.Bool>_N))
+                             (Sym (XMonad.Core.N:Query[0]) <GHC.Types.Bool>_N)))
+                   w
+                   w1
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   w3 }) -}
+instance XMonad.Core.ExtensionClass [XMonad.Hooks.ToggleFade.NoFadeSet]
+  = XMonad.Hooks.ToggleFade.$fExtensionClassNoFadeSet
+instance GHC.Read.Read [XMonad.Hooks.ToggleFade.NoFadeSet]
+  = XMonad.Hooks.ToggleFade.$fReadNoFadeSet
+instance GHC.Show.Show [XMonad.Hooks.ToggleFade.NoFadeSet]
+  = XMonad.Hooks.ToggleFade.$fShowNoFadeSet
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

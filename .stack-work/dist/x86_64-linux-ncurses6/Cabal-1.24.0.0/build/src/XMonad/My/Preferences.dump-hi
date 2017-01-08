@@ -1,0 +1,91 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-08 01:29:59.039123075 UTC
+
+interface xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv:XMonad.My.Preferences 8001
+  interface hash: ff1ff6c5e46281a505a81c889cf03059
+  ABI hash: b42cea4ba4f17ef12f0e994af1e84e99
+  export-list hash: b2569aa40bc53cf9c457679f26e2e640
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4a75c4e57dd2ac4b9cd7e9d030ab3862
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  XMonad.My.Preferences.placement
+module dependencies:
+package dependencies: X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL
+                      X11-xft-0.3.1@X11-xft-0.3.1-K5aCxhr7PdkBJ0izTORldG
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-default-0.7.1.1@data-default-0.7.1.1-5uix4eIzBY9IcVb4V2HbW3
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-FYQpjIylblBDctdkHAFeXA
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.2.6.2@directory-1.2.6.2
+                      dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv
+                      extensible-exceptions-0.1.1.4@extensible-exceptions-0.1.1.4-3h0ykvvAO915cRhUyj3rRV
+                      filepath-1.4.1.0@filepath-1.4.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-6glXNhHF891B41ZfuI8hU8
+                      process-1.4.2.0@process-1.4.2.0
+                      setlocale-1.0.0.4@setlocale-1.0.0.4-EUtO5CfNQTBH7QTFQEDDaI
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.0@unix-2.7.2.0
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-2T8mBCuEDlXDo8zed8Onw4
+                      xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI
+                      xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84:Data.Default.Instances.OldLocale
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         xmonad-0.12@xmonad-0.12-C7fwoSClEurF1iRX9ijBYI:XMonad.Config
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv:Data.DList
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  xmonad-contrib-0.12@xmonad-contrib-0.12-5yojTYrxlmNEezmwtDgaRd:XMonad.Hooks.Place 6928ec884a35a04497ba18bcf501a249
+6b59cac2587b7a9a716a395afad78ebd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   XMonad.My.Preferences.$trModule2
+                   XMonad.My.Preferences.$trModule1) -}
+8a59054c4f5bcc35a40b431d4d9f8eb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "XMonad.My.Preferences"#) -}
+8f8452f8df9644ef6776ad5e2d61ae24
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv"#) -}
+57f0e8dbfd66c4d15fbc632824c04fee
+  placement :: XMonad.Hooks.Place.Placement
+  {- Strictness: m4,
+     Unfolding: InlineRule (0, True, True)
+                XMonad.Hooks.Place.simpleSmart -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

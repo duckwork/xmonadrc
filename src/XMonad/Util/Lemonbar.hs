@@ -12,7 +12,7 @@ module XMonad.Util.Lemonbar
 -- convenience functions for lemonbar
 
 import XMonad.Hooks.DynamicLog (wrap)
-import XMonad.Util.Loggers (onLogger, Logger(..))
+import XMonad.Util.Loggers
 
 lbReverse :: String -> String
 lbReverse = wrap "%{R}" "%{R}"

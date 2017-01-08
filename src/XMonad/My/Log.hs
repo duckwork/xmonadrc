@@ -1,11 +1,10 @@
 module XMonad.My.Log where
 
-import Data.List (intersperse)
-import GHC.IO.Handle (Handle(..))
+import GHC.IO.Handle (Handle)
 import XMonad
 import XMonad.Actions.DynamicWorkspaceOrder (getSortByOrder)
 import XMonad.Hooks.DynamicLog
-import XMonad.My.Theming
+import XMonad.My.Theme
 import XMonad.Util.Lemonbar
 import XMonad.Util.Loggers
 import XMonad.Util.Run (hPutStrLn)
@@ -51,7 +50,7 @@ panel mh = def
       , lbAlignRight, concat xs
       ]
     , ppOutput -- where to output the formatted string
-      = maybe (\s -> return ()) (hPutStrLn) mh
+      = maybe (\_ -> return ()) (hPutStrLn) mh
     , ppExtras -- loggers and other goodies
       = loggers
     } where

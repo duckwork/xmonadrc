@@ -1,0 +1,16 @@
+Configuring X11-xft-0.3.1...
+Building X11-xft-0.3.1...
+Preprocessing library X11-xft-0.3.1...
+[1 of 2] Compiling Graphics.X11.Xrender ( .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/Graphics/X11/Xrender.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/Graphics/X11/Xrender.o )
+
+Graphics/X11/Xrender.hsc:23:1: warning: [-Wtabs]
+    Tab character found here, and in 95 further locations.
+    Please use spaces instead.
+[2 of 2] Compiling Graphics.X11.Xft ( .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/Graphics/X11/Xft.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/Graphics/X11/Xft.o )
+
+Graphics/X11/Xft.hsc:10:1: warning: [-Wtabs]
+    Tab character found here, and in 143 further locations.
+    Please use spaces instead.
+Installing library in
+/home/case/xmonadrc/.stack-work/install/x86_64-linux-ncurses6/lts-7.14/8.0.1/lib/x86_64-linux-ghc-8.0.1/X11-xft-0.3.1-K5aCxhr7PdkBJ0izTORldG
+Registering X11-xft-0.3.1...

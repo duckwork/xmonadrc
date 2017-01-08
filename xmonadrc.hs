@@ -4,14 +4,12 @@ import XMonad
 import XMonad.Hooks.EwmhDesktops (ewmh)
 
 import qualified XMonad.My.Hooks as My
-import qualified XMonad.My.Commands as My
-import qualified XMonad.My.Helpers as My
 import qualified XMonad.My.Keys as My
 import qualified XMonad.My.Layout as My
-import qualified XMonad.My.Log as My
 import qualified XMonad.My.Theme as My
 import qualified XMonad.My.Workspaces as My
 
+main :: IO ()
 main
   = xmonad $ ewmh def
     { modMask                   = mod4Mask

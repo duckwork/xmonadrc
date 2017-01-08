@@ -1,0 +1,434 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-08 01:29:59.197460833 UTC
+
+interface xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv:XMonad.Util.XResources 8001
+  interface hash: 0317f2159dbe3dea18001d3715df5c4b
+  ABI hash: dea4d1d8bab85196f2e26aded3e98483
+  export-list hash: bdb58e3d3807851ea99cf39534013be9
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b2309ec5e760b9733ac809e60b84fa5f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  XMonad.Util.XResources.xresources
+  XMonad.Util.XResources.XResources{XMonad.Util.XResources.XR background color0 color1 color10 color11 color12 color13 color14 color15 color2 color3 color4 color5 color6 color7 color8 color9 font foreground}
+module dependencies:
+package dependencies: X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-default-0.7.1.1@data-default-0.7.1.1-5uix4eIzBY9IcVb4V2HbW3
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-FYQpjIylblBDctdkHAFeXA
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-6glXNhHF891B41ZfuI8hU8
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-B3LqdWnlDzL8N7WtQnkQ3T:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-7EnnOuRxBMR4O5lm1rpRqD:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-LPOHPEJCJUa53W1ZYaHB84:Data.Default.Instances.OldLocale
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv:Data.DList
+import  -/  X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL:Graphics.X11.Xlib 86fad3fa2de2bca863aa7b4a327aa375
+import  -/  X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL:Graphics.X11.Xlib.Display 806125609692b98d9c71d4d1962ebe0c
+import  -/  X11-1.7@X11-1.7-5RhPpcHRMKqDNH6DKI6wnL:Graphics.X11.Xlib.Types af258cd2fd84af11d980a4415f0279e5
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Foreign 45d9596bd7803b1de19a44006ca5c045
+import  -/  base-4.9.0.0:Foreign.C.String f1edbd1e162b25e79d27f68954f15a8a
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.IO.Unsafe 4b8067d479ae9cc65f604cec66cdc238
+import  -/  base-4.9.0.0:GHC.Ptr ff0b178d1c5e49188cd75624bd5d9cc8
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.IO.Unsafe e698988c221572efd6def186307a53e1
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+c30f8d7da3f02c6715b54ee4fc9d7d5b
+  $fShowXResources :: GHC.Show.Show XMonad.Util.XResources.XResources
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ XMonad.Util.XResources.XResources
+                  XMonad.Util.XResources.$fShowXResources_$cshowsPrec
+                  XMonad.Util.XResources.$fShowXResources_$cshow
+                  XMonad.Util.XResources.$fShowXResources_$cshowList -}
+c30f8d7da3f02c6715b54ee4fc9d7d5b
+  $fShowXResources1 ::
+    XMonad.Util.XResources.XResources -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: XMonad.Util.XResources.XResources)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { XMonad.Util.XResources.XR ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ->
+                 XMonad.Util.XResources.$w$cshowsPrec
+                   0#
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   ww14
+                   ww15
+                   ww16
+                   ww17
+                   ww18
+                   ww19
+                   w1 }) -}
+c30f8d7da3f02c6715b54ee4fc9d7d5b
+  $fShowXResources_$cshow ::
+    XMonad.Util.XResources.XResources -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: XMonad.Util.XResources.XResources) ->
+                 XMonad.Util.XResources.$fShowXResources_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c30f8d7da3f02c6715b54ee4fc9d7d5b
+  $fShowXResources_$cshowList ::
+    [XMonad.Util.XResources.XResources] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ XMonad.Util.XResources.XResources
+                   XMonad.Util.XResources.$fShowXResources1) -}
+c30f8d7da3f02c6715b54ee4fc9d7d5b
+  $fShowXResources_$cshowsPrec ::
+    GHC.Types.Int
+    -> XMonad.Util.XResources.XResources -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: XMonad.Util.XResources.XResources)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { XMonad.Util.XResources.XR ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                 XMonad.Util.XResources.$w$cshowsPrec
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   ww14
+                   ww15
+                   ww16
+                   ww17
+                   ww18
+                   ww19
+                   ww20
+                   ww21
+                   w2 } }) -}
+c569889bd7c43f78f1a36d1e0ffcd892
+  $tc'XR :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8487575302119820887##
+                   4597093314462910103##
+                   XMonad.Util.XResources.$trModule
+                   XMonad.Util.XResources.$tc'XR1) -}
+47df0ae16a71d6362ecc8bbc81f01bd4
+  $tc'XR1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'XR"#) -}
+f11a6b0b0aa4f7201ec192422a7aa9f8
+  $tcXResources :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9646385062152558237##
+                   13329492315593365317##
+                   XMonad.Util.XResources.$trModule
+                   XMonad.Util.XResources.$tcXResources1) -}
+2c0afbc1bc3435acf62257cdf3cf2550
+  $tcXResources1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "XResources"#) -}
+66d65b94a67365be01b4ad8a80e76144
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   XMonad.Util.XResources.$trModule2
+                   XMonad.Util.XResources.$trModule1) -}
+e66bc54719c162952bf4de5410a07a69
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "XMonad.Util.XResources"#) -}
+966adbebcaef06da8694c34cb1db4f43
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "xmonadrc-0.0.1.0-E6HMStyFiyjAVPFmc9oFTv"#) -}
+361bd97463982d100893c811eca976e2
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 21,
+     Strictness: <S,U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0] -}
+c30f8d7da3f02c6715b54ee4fc9d7d5b
+  data XResources
+    = XR {foreground :: GHC.Base.String,
+          background :: GHC.Base.String,
+          color0 :: GHC.Base.String,
+          color1 :: GHC.Base.String,
+          color2 :: GHC.Base.String,
+          color3 :: GHC.Base.String,
+          color4 :: GHC.Base.String,
+          color5 :: GHC.Base.String,
+          color6 :: GHC.Base.String,
+          color7 :: GHC.Base.String,
+          color8 :: GHC.Base.String,
+          color9 :: GHC.Base.String,
+          color10 :: GHC.Base.String,
+          color11 :: GHC.Base.String,
+          color12 :: GHC.Base.String,
+          color13 :: GHC.Base.String,
+          color14 :: GHC.Base.String,
+          color15 :: GHC.Base.String,
+          font :: GHC.Base.String}
+a5ef30b5c845a010e074f377bc16948c
+  background :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLLLLLLLLLLLL),1*U(A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds2 }) -}
+bc1038e139ece4bf76cc4c957cd74398
+  color0 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLLLLLLLLLLLL),1*U(A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds3 }) -}
+8ffbd1ddc4eb329d1a3778e989665b33
+  color1 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLLLLLLLLLLLL),1*U(A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds4 }) -}
+c766d1a4e75df49b3dc822f9b8b70acb
+  color10 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLSLLLLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds13 }) -}
+f259a7450299216ef6f4ff96aac4c38b
+  color11 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLSLLLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds14 }) -}
+d40900e7018ffe3af19ca0e9b3acbc0e
+  color12 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLSLLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds15 }) -}
+6d448397c6cf2d291edc7a0b54ee222a
+  color13 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLLSLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds16 }) -}
+9d72cc6e0f3368d02ff33ea42b78f9eb
+  color14 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds17 }) -}
+9df00561f896bf0d1aa046be9e02f868
+  color15 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds18 }) -}
+67604f52b537597c1124b16e9409b0d6
+  color2 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLLLLLLLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds5 }) -}
+795a8b147715f0b7a7a0f16aa9e4ae15
+  color3 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLLLLLLLLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds6 }) -}
+a0e0c88a273f856403e887b58bf59e28
+  color4 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLLLLLLLLLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds7 }) -}
+266a0e28021d2ae1e0da23f6c2a773c9
+  color5 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSLLLLLLLLLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds8 }) -}
+6d612a544c9cc92e20218278d8356cf6
+  color6 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLSLLLLLLLLLL),1*U(A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds9 }) -}
+01d14a95cf9d4e7fc675ad93c8ffa63f
+  color7 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLSLLLLLLLLL),1*U(A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds10 }) -}
+27b98b54375f10858af748ab287ca2cd
+  color8 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLSLLLLLLLL),1*U(A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds11 }) -}
+2a912e31e9b2260a6a466470f3f9c0cb
+  color9 :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLSLLLLLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds12 }) -}
+f2202c7c62fde402b2218e5d7ef73e97
+  font :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds19 }) -}
+4872cc5650a29bf65ae8b372143d0350
+  foreground :: XMonad.Util.XResources.XResources -> GHC.Base.String
+  RecSel Left XMonad.Util.XResources.XResources
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: XMonad.Util.XResources.XResources) ->
+                 case ds of wild { XMonad.Util.XResources.XR ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                 ds1 }) -}
+6e9694ca38a547b4a926339f0b49bb00
+  xresources :: XMonad.Util.XResources.XResources
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ XMonad.Util.XResources.XResources
+                        XMonad.Util.XResources.xresources1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+17c7ca90d63577139f7971fee35f44ff
+  xresources1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          XMonad.Util.XResources.XResources #)
+  {- Arity: 1 -}
+instance GHC.Show.Show [XMonad.Util.XResources.XResources]
+  = XMonad.Util.XResources.$fShowXResources
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
