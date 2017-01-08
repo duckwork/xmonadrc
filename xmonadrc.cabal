@@ -1,0 +1,44 @@
+-----------------------------------------------------------
+name: xmonadrc
+version: 0.0.1.0
+synopsis: Case's xmonad configuration
+homepage: http://duckwork.github.io
+license: WTFPL
+license-file: LICENSE
+author: Case Duckworth <cased123@gmail.com>
+maintainer: Case Duckworth <cased123@gmail.com>
+copyright: Copyright (c) 2016 Case Duckworth
+category: Graphics
+build-type: Simple
+cabal-version: >=1.8
+
+-----------------------------------------------------------
+library
+  exposed-modules:
+    XMonad.Hooks.ToggleFade
+    XMonad.Util.Lemonbar
+    XMonad.Util.XResources
+    XMonad.My.Commands
+    XMonad.My.Helpers
+    XMonad.My.Hooks
+    XMonad.My.Keys
+    XMonad.My.Layout
+    XMonad.My.Log
+    XMonad.My.Theme
+    XMonad.My.Workspaces
+  hs-source-dirs: src
+  ghc-options: -Wall -Werror
+
+  build-depends: X11 >= 1.6 && < 2.0
+               , base >= 4.0 && < 5.0
+               , xmonad == 0.12
+               , xmonad-contrib == 0.12
+
+-----------------------------------------------------------
+executable xmonadrc
+  main-is: xmonadrc.hs
+  ghc-options: -Wall -Werror -threaded
+  build-depends: base
+               , xmonad
+               , xmonad-contrib
+               , xmonadrc
