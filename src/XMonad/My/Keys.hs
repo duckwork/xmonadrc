@@ -10,8 +10,8 @@ import XMonad hiding (keys, mouseBindings)
 import XMonad.Actions.Commands
 import XMonad.Actions.CycleWS
 import XMonad.Actions.DynamicWorkspaces
-import XMonad.Actions.Promote
 import XMonad.Actions.GroupNavigation
+import XMonad.Actions.Promote
 import XMonad.Layout.MouseResizableTile (MRTMessage(..))
 import XMonad.Layout.MultiToggle (Toggle(..))
 import XMonad.Layout.MultiToggle.Instances
@@ -64,7 +64,7 @@ clientKeys _ =
     , ("M-k", windows W.focusUp)
     , ("M-S-j", windows W.swapDown)
     , ("M-S-k", windows W.swapUp)
-    , ("M-`", toggleFloat)
+    , ("M-`", withFocused toggleFloat)
     , ("M-\\", withFocused toggleFade)
     , ("M1-<Tab>", nextMatch Forward (return True))
     ]
@@ -117,6 +117,7 @@ layoutKeys c =
     , ("M-f", sendMessage $ Toggle NBFULL)
     , ("M-b", toggleStrutsHack)
     ---------
+    , ("M-S-`", toggleFloatAll)
     ]
 
 toggleStrutsHack :: X ()

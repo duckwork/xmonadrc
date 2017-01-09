@@ -5,7 +5,7 @@ import Data.List
 import Data.Maybe
 import XMonad
 import XMonad.Actions.FloatKeys
--- import XMonad.Hooks.Place
+import XMonad.Actions.WithAll
 import XMonad.Util.PositionStore
 import XMonad.Util.SpawnNamedPipe (spawnNamedPipe)
 import qualified Data.Map as M
@@ -15,12 +15,19 @@ import qualified XMonad.StackSet as W
 runLogHook :: X ()
 runLogHook = join $ asks $ logHook . config
 
-toggleFloat :: X ()
-toggleFloat = withFocused $ \w -> do
+toggleFloat :: Window -> X ()
+toggleFloat w = do
     floats <- gets (W.floating . windowset)
     if w `M.member` floats
        then withFocused $ windows . W.sink
        else psPlace w
+
+toggleFloatAll :: X ()
+toggleFloatAll = do
+    floats <- gets (W.floating . windowset)
+    if M.null floats
+       then withAll psPlace
+       else sinkAll
 
 psPlace :: Window -> X ()
 psPlace win = withDisplay $ \d -> do
