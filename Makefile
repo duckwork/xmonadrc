@@ -26,12 +26,12 @@ clean:
 	rm -rf dist dist-newstyle
 
 install: all
-	mkdir -p $(dir $(XMONADRC_DEST))
-	install -m 0755 $(XMONADRC_SRC) $(XMONADRC_DEST)
-	install -m 0755 $(XMONAD) $(dir $(XMONADRC_DEST))/xmonad
+	mkdir -p $(dir $(XMONAD_DEST))
+	install -m 0755 $(XMONAD_SRC) $(XMONAD_DEST)
+	install -m 0755 $(XMONAD) $(dir $(XMONAD_DEST))/xmonad
 
 restart: install
-	$(XMONADRC_DEST) --restart
+	$(XMONAD_DEST) --restart
 
 $(TMP_DUMMY):
 	mkdir -p $(dir $@)
