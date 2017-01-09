@@ -9,6 +9,8 @@ import qualified XMonad.My.Layout as My
 import qualified XMonad.My.Theme as My
 import qualified XMonad.My.Workspaces as My
 
+import XMonad.Float.SimplestFloatDec
+
 main :: IO ()
 main
   = xmonad $ ewmh def
@@ -20,15 +22,15 @@ main
     , clickJustFocuses          = False
     , focusFollowsMouse         = True
     , workspaces                = My.workspaces
-    -- , floatFocusFollowsMouse    = True
-    -- , focusRaisesFloat          = True
+    , floatFocusFollowsMouse    = True
+    , focusRaisesFloat          = True
     -----------------------------
     , handleEventHook           = My.handleEventHook
     , layoutHook                = My.layoutHook
     , logHook                   = My.logHook
     , manageHook                = My.manageHook
     , startupHook               = My.startupHook
-    -- , floatHook                 = My.floatHook
+    , floatHook                 = simplestDec [] def
     -----------------------------
     , keys                      = My.keys
     , mouseBindings             = My.mouseBindings
