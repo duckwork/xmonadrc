@@ -30,7 +30,7 @@ keys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 keys c = mkKeymap c (rawKeys c)
 
 mouseBindings :: XConfig Layout -> M.Map (KeyMask, Button) (Window -> X ())
-mouseBindings (XConfig {XMonad.modMask = mm}) = M.fromList
+mouseBindings XConfig {XMonad.modMask = mm} = M.fromList
     [ ((mm, button1), \w -> focus w >> mouseMoveWindow w)
     , ((mm, button2), windows . (W.shiftMaster .) . W.focusWindow)
     , ((mm, button3), \w -> focus w >> Flex.mouseResizeWindow w)
@@ -50,7 +50,7 @@ rawKeys c = concatMap ($ c) keymaps where
 
 xmonadKeys :: XConfig Layout -> [(String, X ())]
 xmonadKeys _ =
-    [ ("M-S-q", io (exitWith ExitSuccess))
+    [ ("M-S-q", io (exitSuccess))
     , ("M-S-r", spawn restarter)
     , ("M-a", commands >>= runCommand)
     ]
@@ -70,10 +70,10 @@ clientKeys _ =
     ]
 
 workspaceKeys :: XConfig Layout -> [(String, X ())]
-workspaceKeys = \_ ->
-    zip (zipWith (++) (repeat "M-") (map show [1..9])) (map (withNthWorkspace W.greedyView) [0..])
+workspaceKeys _ 
+  = zip (map ((++) "M-") (map show [1..9])) (map (withNthWorkspace W.greedyView) [0..])
     ++
-    zip (zipWith (++) (repeat "M-S-") (map show [1..9])) (map (withNthWorkspace W.shift) [0..])
+    zip (map ((++) "M-S-") (map show [1..9])) (map (withNthWorkspace W.shift) [0..])
     ++
     [ (m ++ "M-" ++ k, f d NonEmptyWS)
     | (k, d) <- [ (",", Prev), (".", Next) ]
@@ -96,7 +96,7 @@ screenKeys _ =
 
 appKeys :: XConfig Layout -> [(String, X ())]
 appKeys c =
-    [ ("M-;", spawn $ "dmenu_run")
+    [ ("M-;", spawn "dmenu_run")
     , ("M-<Return>", spawn $ terminal c)
     ]
 

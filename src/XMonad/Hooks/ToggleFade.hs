@@ -39,7 +39,7 @@ import qualified Data.Set as S
 import qualified XMonad.Util.ExtensibleState as XS
 
 -- | datatype storing the set of windows we don't want to fade
-data NoFadeSet = NoFadeSet
+newtype NoFadeSet = NoFadeSet
     { getNFS :: S.Set Window
     } deriving (Read, Show, Typeable)
 
@@ -49,7 +49,7 @@ instance ExtensionClass NoFadeSet where
 
 -- | You want to fade windows that *aren't* in the set.
 doFade :: Window -> X Bool
-doFade w = XS.gets (S.notMember w . getNFS) >>= return
+doFade w = XS.gets (S.notMember w . getNFS)
 
 -- | Given a query of windows you want to stay opaque and
 -- the amount to fade other windows by, set up a log hook.

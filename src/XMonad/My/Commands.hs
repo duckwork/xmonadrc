@@ -31,7 +31,7 @@ xmonadCommands =
     , ("swap-master", windows W.swapMaster)
     , ("float", withFocused float)
     , ("sink", withFocused $ windows . W.sink)
-    , ("quit-wm", io $ exitWith ExitSuccess)
+    , ("quit-wm", io $ exitSuccess)
     , ("refresh-panel", runLogHook)
     , ("toggle-struts", sendMessage ToggleStruts)
     , ("unset-struts", sendMessage $ SetStruts [] [minBound .. maxBound])
@@ -41,14 +41,14 @@ xmonadCommands =
 workspaceCommands :: X [(String, X ())]
 workspaceCommands = 
     asks (workspaces . config) >>= \spaces -> return
-        [((m ++ i), windows $ f i)
+        [(m ++ i, windows $ f i)
             | i <- spaces
             , (f,m) <- [(W.view, "view-"), (W.shift, "shift-")]
         ]
 
 screenCommands :: [(String, X ())]
 screenCommands =
-    [ ((m ++ show sc), screenWorkspace (fromIntegral sc) >>= flip whenJust (windows . f))
+    [ (m ++ show sc, screenWorkspace (fromIntegral sc) >>= flip whenJust (windows . f))
         | sc <- [0,1] :: [Int] -- TODO adapt to screen changes
         , (f, m) <- [(W.view, "screen-"), (W.shift, "screen-to-")]
     ]

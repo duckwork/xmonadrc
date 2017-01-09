@@ -30,11 +30,10 @@ library
   ghc-options: -Wall -Werror
 
   build-depends: base >= 4.0 && < 5.0
-               , X11 >= 1.7 && < 1.8
                , containers >= 0.4 && < 0.6
-               , X11-xft >= 0.2
                , xmonad == 0.12
                , xmonad-contrib == 0.12
+               , X11 >= 1.6 && < 1.8
 
 -----------------------------------------------------------
 executable xmonadrc

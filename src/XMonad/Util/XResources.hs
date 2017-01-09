@@ -68,7 +68,7 @@ xresources' = do
     c14 <- xdefault "color14"
     c15 <- xdefault "color15"
     fn  <- xdefault "font"
-    return $ XR
+    return XR
         { foreground = fromMaybe "#000000" fg
         , background = fromMaybe "#c0c0c0" bg
         , color0     = fromMaybe "#000000" c0
@@ -92,4 +92,5 @@ xresources' = do
 
 -- | this is 'safe' because I use fromMaybe.
 xresources :: XResources
+{-# NOINLINE xresources #-}
 xresources = unsafePerformIO xresources'

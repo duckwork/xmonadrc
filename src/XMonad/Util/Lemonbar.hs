@@ -25,15 +25,11 @@ lbAlignRight = "%{r}"
 lbColor :: String -> String -> String -> String
 lbColor fg bg = wrap before after where
     before
-      = concat
-      $ [ if null fg then "" else concat ["%{F", fg, "}"]
-        , if null bg then "" else concat ["%{B", bg, "}"]
-        ]
+      = (if null fg then "" else concat ["%{F", fg, "}"])
+      ++ (if null bg then "" else concat ["%{B", bg, "}"])
     after
-      = concat
-      $ [ if null fg then "" else "%{F-}"
-        , if null bg then "" else "%{B-}"
-        ]
+      = (if null fg then "" else "%{F-}")
+      ++ (if null bg then "" else "%{B-}")
 
 lbFontIdx :: Int -> String -> String
 lbFontIdx n s = concat [ "%{T", show n, "}", s, "%{T-}" ]
@@ -49,7 +45,7 @@ lbLineColor c s = concat [ "%{U", c, "}", s, "%{U-}" ]
 
 lbClick :: Int -> String -> String -> String
 lbClick button action 
-  = wrap ("%{A"++(show button)++":"++action++":}") "%{A}"
+  = wrap ("%{A"++show button++":"++action++":}") "%{A}"
 
 -- logger functions
 

@@ -50,7 +50,7 @@ panel mh = def
       , lbAlignRight, concat xs
       ]
     , ppOutput -- where to output the formatted string
-      = maybe (\_ -> return ()) (hPutStrLn) mh
+      = maybe (\_ -> return ()) hPutStrLn mh
     , ppExtras -- loggers and other goodies
       = loggers
     } where
@@ -60,11 +60,11 @@ panel mh = def
 
 loggers :: [Logger]
 loggers = reverse
-    [ normalOpaqueL $ dateLog
-    , normalOpaqueL $ batLog
-    , normalOpaqueL $ volumeLog
-    , normalOpaqueL $ wifiLog
-    , normalOpaqueL $ mpdLog
+    [ normalOpaqueL dateLog
+    , normalOpaqueL batLog
+    , normalOpaqueL volumeLog
+    , normalOpaqueL wifiLog
+    , normalOpaqueL mpdLog
     ] where
         dateLog = wrapL "" " " $ date "%H:%M %a %e"
         batLog = wrapL "" (sepClr sep') 

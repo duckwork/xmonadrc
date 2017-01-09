@@ -34,8 +34,8 @@ psPlace win = withDisplay $ \d -> do
       Just (Rectangle x y w h) -> do
         let x' = fromIntegral x
             y' = fromIntegral y
-            w' = (fromIntegral w) - (fromIntegral (wa_width wa))
-            h' = (fromIntegral h) - (fromIntegral (wa_height wa))
+            w' = fromIntegral w - fromIntegral (wa_width wa)
+            h' = fromIntegral h - fromIntegral (wa_height wa)
         keysMoveWindowTo (x',y') (0,0) win
         keysResizeWindow (w',h') (0,0) win
         -- focus win >> placeFocused pl
@@ -47,14 +47,14 @@ setFullscreenSupported = withDisplay $ \dpy -> do
     a <- getAtom "_NET_SUPPORTED"
     fs <- getAtom "_NET_WM_STATE_FULLSCREEN"
     io $ do
-        supportedList <- fmap (join . maybeToList) $ getWindowProperty32 dpy a r
+        supportedList <- (join . maybeToList) <$> getWindowProperty32 dpy a r
         changeProperty32 dpy r a aTOM propModeReplace (nub $ fromIntegral fs : supportedList)
 
 lemonbar :: X ()
 lemonbar = spawnNamedPipe lemonbar' "xpanel"
   where
     lemonbar' 
-      = concat $ intersperse " "
+      = unwords
         [ "lemonbar"--, "-d"
         , "-n xpanel"
         , "-f '" ++ My.xfont ++ "'"
