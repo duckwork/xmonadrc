@@ -36,7 +36,7 @@ panel mh = def
       = ""
     ----
     , ppTitle -- the current window's title
-      = normalOpaque . sep' . space . shorten 20
+      = normalOpaque . sep' . space . shorten 50
     , ppLayout -- the current layout's name
       = normalOpaque . sep' . lbClick 1 "xmonadctl next-layout" . space
     ----

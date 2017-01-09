@@ -3,11 +3,13 @@ module XMonad.My.Hooks
     , manageHook
     , startupHook
     , logHook
+    , floatHook
     ) where
 
 import Data.Monoid
-import XMonad hiding (handleEventHook, manageHook, startupHook, logHook)
+import XMonad hiding (handleEventHook, manageHook, startupHook, logHook, floatHook)
 import XMonad.Actions.GroupNavigation (historyHook)
+import XMonad.Float.SimplestFloatDec
 import XMonad.Hooks.DynamicLog (dynamicLogWithPP)
 import XMonad.Hooks.EwmhDesktops (fullscreenEventHook)
 import XMonad.Hooks.InsertPosition
@@ -18,6 +20,7 @@ import XMonad.Hooks.ServerMode
 import XMonad.Hooks.ToggleFade
 import XMonad.My.Commands
 import XMonad.My.Helpers
+import XMonad.My.Theme
 import XMonad.Util.SpawnNamedPipe (getNamedPipe)
 import XMonad.Util.SpawnOnce
 import qualified XMonad.My.Log as My
@@ -60,6 +63,11 @@ logHook = do
     h <- getNamedPipe "xpanel"
     dynamicLogWithPP $ My.panel h
     return ()
+
+floatHook :: FloatDec Window
+floatHook = simplestDec fdExcludes decTheme
+    where fdExcludes :: [Query Bool]
+          fdExcludes = []
 
 startupHook :: X ()
 startupHook = do 
