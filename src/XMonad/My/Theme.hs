@@ -1,9 +1,18 @@
-module XMonad.My.Theme where
+module XMonad.My.Theme 
+    ( normalBG, focusBG, urgentBG
+    , normalFG, focusFG, urgentFG
+    , xfont, lemonFont
+    , normalBorderColor, focusedBorderColor
+    , decTheme, promptTheme
+    , module XMonad.Util.XResources
+    ) where
 
 -- all the theming stuff for xmonad
 
-import XMonad.Util.XResources
+import Data.List
 import XMonad.Float.SimplestFloatDec
+import qualified XMonad.Prompt as P
+import XMonad.Util.XResources
 
 normalBG, focusBG, urgentBG :: String
 normalBG = background xresources
@@ -17,9 +26,13 @@ urgentFG = color15 xresources
 xfont :: String
 xfont = font xresources
 
+lemonFont :: String
+-- lemonFont = "Fixedsys Excelsior 3.01"
+lemonFont = "Roboto Mono:size=8"
+
 normalBorderColor, focusedBorderColor :: String
 normalBorderColor = normalBG
-focusedBorderColor = focusBG
+focusedBorderColor = normalFG
 
 decTheme :: Theme
 decTheme = def
@@ -36,3 +49,20 @@ decTheme = def
     , decoHeight = 14
     }
 
+
+promptTheme :: P.XPConfig
+promptTheme = def
+    { P.font = "xft:" ++ lemonFont
+    , P.bgColor = normalBG
+    , P.fgColor = normalFG
+    , P.fgHLight = normalBG
+    , P.bgHLight = normalFG
+    , P.borderColor = normalBG
+    , P.promptBorderWidth = 1
+    , P.position = P.Top
+    , P.alwaysHighlight = True
+    , P.height = 20
+    , P.maxComplRows = Nothing
+    , P.historySize = 100
+    , P.searchPredicate = isInfixOf
+    }

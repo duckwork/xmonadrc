@@ -7,24 +7,27 @@ module XMonad.My.Keys
 
 import System.Exit
 import XMonad hiding (keys, mouseBindings)
-import XMonad.Actions.Commands
 import XMonad.Actions.CycleWS
 import XMonad.Actions.DynamicWorkspaces
 import XMonad.Actions.GroupNavigation
 import XMonad.Actions.Promote
+import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ToggleFade
 import XMonad.Layout.MouseResizableTile (MRTMessage(..))
 import XMonad.Layout.MultiToggle (Toggle(..))
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.ToggleLayouts hiding (Toggle)
 import XMonad.My.Commands
 import XMonad.My.Helpers
+import XMonad.My.Theme
+import XMonad.Prompt.XMonad
 import XMonad.Util.EZConfig
 import qualified Data.Map as M
 import qualified XMonad.Actions.DynamicWorkspaceOrder as DO
 import qualified XMonad.Actions.FlexibleResize as Flex
 import qualified XMonad.StackSet as W
 
-import XMonad.Hooks.ToggleFade
+import XMonad.Prompt.RunOrRaise
 
 keys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 keys c = mkKeymap c (rawKeys c)
@@ -52,7 +55,8 @@ xmonadKeys :: XConfig Layout -> [(String, X ())]
 xmonadKeys _ =
     [ ("M-S-q", io (exitSuccess))
     , ("M-S-r", spawn restarter)
-    , ("M-a", commands >>= runCommand)
+    , ("M-a", commands >>= 
+              \c -> xmonadPromptC c promptTheme)
     ]
   where
     restarter = "xmonad --recompile && xmonad --restart"
@@ -96,7 +100,8 @@ screenKeys _ =
 
 appKeys :: XConfig Layout -> [(String, X ())]
 appKeys c =
-    [ ("M-;", spawn "dmenu_run")
+    [ ("M-;", runOrRaisePrompt promptTheme)
+    , ("M-p", spawn "dmenu_run -y -1 -h 20")
     , ("M-<Return>", spawn $ terminal c)
     ]
 
@@ -115,13 +120,13 @@ layoutKeys c =
     ---------
     , ("M-x", sendMessage ToggleLayout)
     , ("M-f", sendMessage $ Toggle NBFULL)
-    , ("M-b", toggleStrutsHack)
+    , ("M-b", sendMessage $ ToggleStruts)
     ---------
     , ("M-S-`", toggleFloatAll)
     ]
 
-toggleStrutsHack :: X ()
-toggleStrutsHack = spawn "toggle-lb-hack.sh"
+-- toggleStrutsHack :: X ()
+-- toggleStrutsHack = spawn "toggle-lb-hack.sh"
 
 fnKeys :: XConfig Layout -> [(String, X ())]
 fnKeys _ = 

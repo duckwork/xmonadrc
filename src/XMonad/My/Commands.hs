@@ -34,8 +34,9 @@ xmonadCommands =
     , ("quit-wm", io $ exitSuccess)
     , ("refresh-panel", runLogHook)
     , ("toggle-struts", sendMessage ToggleStruts)
-    , ("unset-struts", sendMessage $ SetStruts [] [minBound .. maxBound])
-    , ("set-struts", sendMessage $ SetStruts [minBound .. maxBound] [])
+    , ("unset-struts", strutsOff)
+    , ("set-struts", strutsOn)
+    , ("fullscreen", fullScreenFocused)
     ]
 
 workspaceCommands :: X [(String, X ())]

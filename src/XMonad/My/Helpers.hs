@@ -6,6 +6,8 @@ import Data.Maybe
 import XMonad
 import XMonad.Actions.FloatKeys
 import XMonad.Actions.WithAll
+import XMonad.Hooks.ManageDocks
+-- import XMonad.Layout.LayoutCombinators (JumpToLayout(..))
 import XMonad.Util.PositionStore
 import XMonad.Util.SpawnNamedPipe (spawnNamedPipe)
 import qualified Data.Map as M
@@ -62,10 +64,21 @@ lemonbar = spawnNamedPipe lemonbar' "xpanel"
   where
     lemonbar' 
       = unwords
-        [ "lemonbar"--, "-d"
+        [ "lemonbar" -- , "-o -2"
         , "-n xpanel"
-        , "-f '" ++ My.xfont ++ "'"
-        , "-B '#88" ++ tail My.normalBG ++ "'"
+        , "-u 2", "-U '" ++ My.normalFG ++ "'"
+        , "-f '" ++ My.lemonFont ++ "'"
+        , "-B '#00" ++ tail My.normalBG ++ "'"
         , "-F '" ++ My.normalFG ++ "'"
         , "| sh"
         ]
+
+strutsOn :: X ()
+strutsOn = sendMessage $ SetStruts [minBound .. maxBound] []
+
+strutsOff :: X ()
+strutsOff = sendMessage $ SetStruts [] [minBound .. maxBound]
+
+fullScreenFocused :: X ()
+fullScreenFocused = withFocused 
+                  $ \w -> windows $ W.float w (W.RationalRect 0 0 1 1)

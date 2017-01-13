@@ -44,6 +44,7 @@ manageHook = composeAll
         , stringProperty "WM_WINDOW_ROLE" =? gtkFile -?> doCenterFloat
         , isDialog -?> doCenterFloat
         , className =? "Xmessage" -?> doCenterFloat
+        , className =? "Firefox" <&&> appName =? "Toplevel" -?> doFloat
         , transience -- Move transient windows to their parent.
         -- Don't steal master
         , className =? "URxvt" -?> tileBelow

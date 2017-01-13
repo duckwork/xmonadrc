@@ -13,12 +13,12 @@ panel :: Maybe Handle -> PP
 panel mh = def
     { ppCurrent -- current workspace
       = \ws -> 
-        lbColor "" focusBG
+        lbColor normalBG normalFG
         . lbClick 1 ("xmonadctl view-"++ws)
         . space $ ws
     , ppVisible -- visible workspace
       = \ws ->
-        normalOpaque . lbUnderline
+        normalOpaque . lbOverline
         . lbClick 1 ("xmonadctl view-"++ws)
         . space $ ws
     , ppHidden -- hidden workspace with windows
@@ -36,18 +36,20 @@ panel mh = def
       = ""
     ----
     , ppTitle -- the current window's title
-      = normalOpaque . sep' . space . shorten 50
+      = normalOpaque . shorten 50
     , ppLayout -- the current layout's name
-      = normalOpaque . sep' . lbClick 1 "xmonadctl next-layout" . space
+      = normalOpaque
+      . lbClick 1 "xmonadctl next-layout"
+      . layoutNameConverter
     ----
     , ppSep -- separator b/w sections
-      = ""
+      = normalOpaque " "
     , ppOrder -- the order of sections
       = \(ws:l:t:xs) ->
-      [ lbAlignLeft, ws
+      [ "%{+u}" ++ lbAlignLeft ++ ws
       , l
       , t
-      , lbAlignRight, concat xs
+      , lbAlignRight ++ concat xs
       ]
     , ppOutput -- where to output the formatted string
       = maybe (\_ -> return ()) hPutStrLn mh
@@ -55,8 +57,14 @@ panel mh = def
       = loggers
     } where
         space = wrap " " " "
-        sep' = wrap (lbColor "#aaaaaa" "" sep) ""
+        -- sep' = wrap (lbColor "#aaaaaa" "" sep) ""
         normalOpaque = lbColor "" normalBG
+        layoutNameConverter l
+          = case l of
+              "MouseResizableTile"        -> "|v|"
+              "Mirror MouseResizableTile" -> "|h|"
+              "Full"                      -> "|f|"
+              _                           -> l
 
 loggers :: [Logger]
 loggers = reverse
@@ -66,7 +74,7 @@ loggers = reverse
     , normalOpaqueL wifiLog
     , normalOpaqueL mpdLog
     ] where
-        dateLog = wrapL "" " " $ date "%H:%M %a %e"
+        dateLog = wrapL "" " " $ date "%H:%M %a %d"
         batLog = wrapL "" (sepClr sep') 
             $ logCmd "batstat"
         volumeLog
@@ -88,3 +96,4 @@ loggers = reverse
 sep :: String
 -- sep = "│"
 sep = "¦"
+-- sep = "§"

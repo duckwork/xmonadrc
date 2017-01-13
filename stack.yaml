@@ -1,8 +1,8 @@
 flags:
     # For some reason, we can't find Xft
     # (but we don't need it anyway, so THERE)
-    xmonad-contrib:
-        use_xft: false
+    # xmonad-contrib:
+        # use_xft: false
 resolver: lts-7.14
 packages:
 - ./
@@ -10,3 +10,4 @@ packages:
 - ./vendor/xmonad-contrib/
 extra-deps:
 - X11-1.7
+- X11-xft-0.3.1
